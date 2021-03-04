@@ -9,4 +9,4 @@ cp -rf html ../docs
 cd ..
 git add .
 git commit -m "refresh"
-git push origin master --force
+git push origin master

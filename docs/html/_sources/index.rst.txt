@@ -12,10 +12,3 @@ Welcome to wino-fr's documentation!
    :glob:
 
    base/index
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

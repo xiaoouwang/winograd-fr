@@ -11,4 +11,4 @@ Welcome to wino-fr's documentation!
    :caption: Contents:
    :glob:
 
-   base/index
+   xiaoou/index

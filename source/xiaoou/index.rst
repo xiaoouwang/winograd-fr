@@ -1,4 +1,4 @@
-wino-fr-documentation
+xiaoou wang
 ==========
 
 Ceci est une ébauche pour la documentation de winograd-fr.

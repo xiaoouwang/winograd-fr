@@ -12,4 +12,5 @@ wino data related
 #. It has two items too.
 
 .. execute_code::
+    :linenos:
     print("hello")

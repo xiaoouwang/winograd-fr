@@ -149,7 +149,7 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/xiaoou/01_linux.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../sources/xiaoou/01_linux.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -175,14 +175,12 @@ item uses two lines.</p></li>
 <li><p>This is a numbered list.</p></li>
 <li><p>It has two items too.</p></li>
 </ol>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-<span class="gp">... </span>   <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-<span class="gp">... </span>
-<span class="go">0</span>
-<span class="go">1</span>
-<span class="go">2</span>
-<span class="go">3</span>
-<span class="go">4</span>
+<p class="caption"><span class="caption-text">Code </span></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p class="caption"><span class="caption-text">Results</span></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>

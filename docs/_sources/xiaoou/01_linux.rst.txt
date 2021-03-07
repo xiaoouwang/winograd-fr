@@ -11,43 +11,44 @@ wino data related
 #. This is a numbered list.
 #. It has two items too.
 
-.. execute_code::
-    :linenos:
+..
+  .. execute_code::
+      :linenos:
 
-    print("hello")
-    for i in range(5):
-        print(i)
+      print("hello")
+      for i in range(5):
+          print(i)
 
-.. plot::
+  .. plot::
 
-   import matplotlib.pyplot as plt
-   import numpy as np
-   x = np.random.randn(1000)
-   plt.hist( x, 20)
-   plt.grid()
-   plt.title(r'Normal: $\mu=%.2f, \sigma=%.2f$'%(x.mean(), x.std()))
-   plt.show()
+    import matplotlib.pyplot as plt
+    import numpy as np
+    x = np.random.randn(1000)
+    plt.hist( x, 20)
+    plt.grid()
+    plt.title(r'Normal: $\mu=%.2f, \sigma=%.2f$'%(x.mean(), x.std()))
+    plt.show()
 
-.. plot::
+  .. plot::
 
-   import matplotlib.pyplot as plt
-   import numpy as np
-   x = np.random.randn(1000)
-   plt.hist( x, 20)
-   plt.grid()
-   plt.title(r'Normal: $\mu=%.2f, \sigma=%.2f$'%(x.mean(), x.std()))
-   plt.show()
+    import matplotlib.pyplot as plt
+    import numpy as np
+    x = np.random.randn(1000)
+    plt.hist( x, 20)
+    plt.grid()
+    plt.title(r'Normal: $\mu=%.2f, \sigma=%.2f$'%(x.mean(), x.std()))
+    plt.show()
 
-.. sourcecode:: ipython
+  .. sourcecode:: ipython
 
-    In [69]: lines = plot([1,2,3])
+      In [69]: lines = plot([1,2,3])
 
-    In [70]: setp(lines)
-      alpha: float
-      animated: [True | False]
-      antialiased or aa: [True | False]
-      ...snip
+      In [70]: setp(lines)
+        alpha: float
+        animated: [True | False]
+        antialiased or aa: [True | False]
+        ...snip
 
-.. math::
+  .. math::
 
-  W^{3\beta}_{\delta_1 \rho_1 \sigma_2} \approx U^{3\beta}_{\delta_1 \rho_1}
+    W^{3\beta}_{\delta_1 \rho_1 \sigma_2} \approx U^{3\beta}_{\delta_1 \rho_1}

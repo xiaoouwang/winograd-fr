@@ -29,15 +29,7 @@ author = 'lattice members'
 # ones.
 # extensions = ['myst-parser']
 # extensions = []
-extensions = ['sphinx.ext.mathjax', 'sphinx_autorun', 'sphinx_execute_code', 'matplotlib.sphinxext.mathmpl',
-              'matplotlib.sphinxext.plot_directive',
-              'IPython.sphinxext.ipython_console_highlighting',
-              'IPython.sphinxext.ipython_directive',
-              'sphinx.ext.autodoc',
-              'sphinx.ext.mathjax',
-              'numpydoc',
-            #   'sphinx.ext.inheritance_diagram',
-              'sphinx.ext.doctest',
+extensions = ['sphinx.ext.mathjax', 'sphinx_autorun',
               ]
 #   'numpydoc']
 

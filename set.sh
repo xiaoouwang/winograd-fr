@@ -8,6 +8,10 @@ cp -rf _sources sources
 cd ..
 # rm -rf ../docs
 cp -rf html ../docs
+cd ../docs
+cp -rf _images images
+grep -rl static . | xargs sed -i -e "s/_images/images/g"
+grep -rl sources . | xargs sed -i -e "s/_images/images/g"
 cd ..
 git add .
 git commit -m "refresh"

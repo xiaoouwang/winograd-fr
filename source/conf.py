@@ -29,7 +29,7 @@ author = 'lattice members'
 # ones.
 # extensions = ['myst-parser']
 # extensions = []
-extensions = ['sphinx.ext.mathjax', 'sphinx_autorun']
+extensions = ['sphinx.ext.mathjax', 'sphinx_autorun','sphinx_execute_code']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

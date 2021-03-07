@@ -11,8 +11,5 @@ wino data related
 #. This is a numbered list.
 #. It has two items too.
 
-.. runblock:: pycon
-
-    >>> for i in range(5):
-    ...    print(i)
-
+.. execute_code::
+    print("hello")

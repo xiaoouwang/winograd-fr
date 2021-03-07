@@ -10,4 +10,4 @@ Ceci est une ébauche pour la documentation de winograd-fr.
     01_linux
     02_ipython
     03_numpy
-    test
+    test.ipynb

@@ -1,9 +1,9 @@
-.. xow documentation master file, created by
+.. wino-fr documentation master file, created by
    sphinx-quickstart on Tue Mar  2 20:22:05 2021.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to xow's documentation!
+Welcome to wino-fr's documentation!
 ===============================
 
 .. toctree::
@@ -11,11 +11,4 @@ Welcome to xow's documentation!
    :caption: Contents:
    :glob:
 
-   base/index
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   xiaoou/index

@@ -5,6 +5,7 @@ grep -rl _sources . | xargs sed -i -e "s/_sources/sources/g"
 cp -rf _static static
 cp -rf _sources sources
 cd ..
+# rm -rf ../docs
 cp -rf html ../docs
 cd ..
 git add .

@@ -11,3 +11,4 @@ Ceci est une ébauche pour la documentation de winograd-fr.
     02_ipython
     03_numpy
     test.ipynb
+    testR.ipynb

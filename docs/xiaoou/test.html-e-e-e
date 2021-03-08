@@ -412,7 +412,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../images/xiaoou_test_1_0.svg" src="../images/xiaoou_test_1_0.svg"/></div>
+<img alt="../_images/xiaoou_test_1_0.svg" src="../_images/xiaoou_test_1_0.svg"/></div>
 </div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
@@ -459,7 +459,7 @@ div.rendered_html tbody tr:hover {
               <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
               <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
             |
-            <a class="muted-link" href="../_sources/xiaoou/test.ipynb.txt"
+            <a class="muted-link" href="../sources/xiaoou/test.ipynb.txt"
                rel="nofollow">
               Montrer le code source
             </a>

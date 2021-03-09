@@ -16,7 +16,7 @@ Vers une documentation automatique et structurée à base de jupyter notebooks
 .. important::
    Paper published at Proceedings of the 2nd Workshop on Coreference Resolution Beyond OntoNotes (CORBON 2017) by `Pascal Amsili, Olga Seminck`,  check `A Google-Proof Collection of French Winograd Schemas <https://www.aclweb.org/anthology/W17-1504/>`_
 
-   Paper published at Actes de la Conférence sur le Traitement Automatique des Langues Naturelles (TALN) PFIA 2019 by `Olga Seminck, Vincent Segonne, Pascal Amsili`,  check `Modèles de langue appliqués aux schémas Winograd français (Language Models applied to French Winograd Schemas) <https://www.aclweb.org/anthology/W17-1504/>`_
+   Paper published at Actes de la Conférence sur le Traitement Automatique des Langues Naturelles (TALN) PFIA 2019 by `Olga Seminck, Vincent Segonne, Pascal Amsili`,  check `Modèles de langue appliqués aux schémas Winograd français (Language Models applied to French Winograd Schemas) <https://www.aclweb.org/anthology/2019.jeptalnrecital-court.20/>`_
 
 .. admonition:: Au fil de l'eau...
 

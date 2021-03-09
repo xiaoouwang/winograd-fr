@@ -126,7 +126,7 @@ def xo_cleanfrwac_alt(data_dir):
     # delete second and 3rd rows and reset index
     fr_pmi_ancien.drop([0, 1], inplace=True)
     fr_pmi_ancien.reset_index(drop=True, inplace=True)
-    # col names lowercase and rename second column nb_npropre
+    # col names lowercase and rename second column nb_npropre and keep names simple
     fr_pmi_ancien.rename(str.lower, axis='columns', inplace=True)
     fr_pmi_ancien.rename(columns={'np': 'nb_npropre', 'r0 lm': 'r0', 'r1 lm': 'r1', 'item': 'schema'}, inplace=True)
     # keep 8 first columns

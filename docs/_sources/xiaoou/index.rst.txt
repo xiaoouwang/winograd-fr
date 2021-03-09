@@ -1,14 +1,13 @@
-xiaoou wang
-==========
+Xiaoou Wang stage Winograd
+================================
 
-Ceci est une ébauche pour la documentation de winograd-fr.
+Cette section documente la contribution de Xiaoou Wang au projet wino-fr.
 
 .. toctree::
     :maxdepth: 2
     :numbered: 2
+    :glob:
 
-    01_linux
-    02_ipython
-    03_numpy
-    test.ipynb
-    testR.ipynb
+    0*
+..    01_french_data_cleaning.ipynb
+..    02_french_final_json.ipynb

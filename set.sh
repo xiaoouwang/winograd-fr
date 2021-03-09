@@ -14,6 +14,8 @@ grep -rl static . | xargs sed -i -e "s/_images/images/g"
 grep -rl sources . | xargs sed -i -e "s/_images/images/g"
 find . -type f -print0 | xargs -0 perl -pi -e "s/\?digest.*\"/\"/g"
 cd ..
+echo here
+echo $PWD
 git add .
 git commit -m "refresh"
 git push origin master

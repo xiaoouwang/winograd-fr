@@ -14,13 +14,12 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-
 from recommonmark.parser import CommonMarkParser
 # -- Project information -----------------------------------------------------
 
-project = 'winograd-fr'
-copyright = '2021, lattice'
-author = 'lattice members'
+project = 'Winograd-fr'
+copyright = '2021, Lattice'
+author = 'Lattice members'
 
 
 # -- General configuration ---------------------------------------------------

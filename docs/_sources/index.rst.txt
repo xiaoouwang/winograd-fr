@@ -13,6 +13,9 @@ Vers une documentation automatique et structurée à base de jupyter notebooks
 
     <input type="checkbox">
 
+.. important::
+   Paper published at Proceedings of the 2nd Workshop on Coreference Resolution Beyond OntoNotes (CORBON 2017),  check `A Google-Proof Collection of French Winograd Schemas <https://www.aclweb.org/anthology/W17-1504/>`_
+
 .. admonition:: Actualités au fil de l'eau...
 
     |check|  2021-03-01: Revise the original xml file to add english ids and identify the non wino items as `000` by *Xiaoou* -> `winograd_fr_v2.xml`

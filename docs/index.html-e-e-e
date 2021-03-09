@@ -130,6 +130,10 @@
 <h1>Welcome to wino-fr’s documentation!<a class="headerlink" href="#welcome-to-wino-fr-s-documentation" title="Lien permanent vers ce titre">¶</a></h1>
 <div class="section" id="vers-une-documentation-automatique-et-structuree-a-base-de-jupyter-notebooks">
 <h2>Vers une documentation automatique et structurée à base de jupyter notebooks<a class="headerlink" href="#vers-une-documentation-automatique-et-structuree-a-base-de-jupyter-notebooks" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Paper published at Proceedings of the 2nd Workshop on Coreference Resolution Beyond OntoNotes (CORBON 2017),  check <a class="reference external" href="https://www.aclweb.org/anthology/W17-1504/">A Google-Proof Collection of French Winograd Schemas</a></p>
+</div>
 <div class="admonition-actualites-au-fil-de-l-eau admonition">
 <p class="admonition-title">Actualités au fil de l’eau…</p>
 <p><input checked="" type="checkbox"/>  2021-03-01: Revise the original xml file to add english ids and identify the non wino items as <cite>000</cite> by <em>Xiaoou</em> -&gt; <cite>winograd_fr_v2.xml</cite></p>

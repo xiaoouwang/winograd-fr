@@ -3,9 +3,16 @@ Welcome to wino-fr's documentation!
 
 Vers une documentation automatique et structurée à base de jupyter notebooks
 
+.. |check| raw:: html
+
+    <input checked=""  type="checkbox">
+
+|check| Get a french-english linking version and using items instead of schemas
+
+
 Données :
 
-.. list-table:: data
+.. list-table:: Data
    :widths: 15 10 10 30
    :header-rows: 1
 

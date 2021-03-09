@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Recherche" href="../search.html" /><link rel="next" title="1. This page is dedicated to French pmi calculation" href="01_french_pmi.html" /><link rel="prev" title="Welcome to wino-fr’s documentation!" href="../index.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Recherche" href="../search.html" /><link rel="next" title="1. French pmi calculation" href="01_french_pmi.html" /><link rel="prev" title="Welcome to wino-fr’s documentation!" href="../index.html" />
 
     <meta name="generator" content="sphinx-3.5.1, furo 2021.02.28.beta28"/>
         <title>Cette section documente tout ce qu’a fait Xiaoou Wang dans le cadre du stage Winograd - Documentation winograd-fr</title>
@@ -106,10 +106,9 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-scroll"><div class="sidebar-tree">
-  <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
+  <ul class="current">
 <li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">Cette section documente tout ce qu’a fait Xiaoou Wang dans le cadre du stage Winograd</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="01_french_pmi.html">1. This page is dedicated to French pmi calculation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_french_pmi.html">1. French pmi calculation</a></li>
 </ul>
 </li>
 </ul>
@@ -131,7 +130,7 @@
 <p>Ceci est une ébauche pour la documentation de winograd-fr.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="01_french_pmi.html">1. This page is dedicated to French pmi calculation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="01_french_pmi.html">1. French pmi calculation</a></li>
 </ul>
 </div>
 </div>
@@ -145,7 +144,7 @@
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title"><span class="section-number">1. </span>This page is dedicated to French pmi calculation</div>
+                <div class="title"><span class="section-number">1. </span>French pmi calculation</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -170,7 +169,7 @@
               <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
               <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
             |
-            <a class="muted-link" href="../_sources/xiaoou/index.rst.txt"
+            <a class="muted-link" href="../sources/xiaoou/index.rst.txt"
                rel="nofollow">
               Montrer le code source
             </a>

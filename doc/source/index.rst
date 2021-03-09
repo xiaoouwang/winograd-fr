@@ -6,9 +6,10 @@
 Welcome to wino-fr's documentation!
 ===============================
 
+Vers une documentation automatique et structurée à base de jupyter notebooks.
+
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
    :glob:
 
    xiaoou/index

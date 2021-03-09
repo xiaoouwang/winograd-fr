@@ -28,14 +28,24 @@
  "cells": [
   {
    "source": [
-    "# This page is dedicated to French pmi calculation\n",
-    "\n",
+    "# French pmi calculation"
+   ],
+   "cell_type": "markdown",
+   "metadata": {
+    "pycharm": {
+     "name": "#%% md\n"
+    }
+   }
+  },
+  {
+   "cell_type": "markdown",
+   "source": [
     "\n",
     "\n",
     "\n"
    ],
-   "cell_type": "markdown",
    "metadata": {
+    "collapsed": false,
     "pycharm": {
      "name": "#%% md\n"
     }

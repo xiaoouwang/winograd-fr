@@ -128,8 +128,13 @@
         <div class="section" id="welcome-to-wino-fr-s-documentation">
 <h1>Welcome to wino-fr’s documentation!<a class="headerlink" href="#welcome-to-wino-fr-s-documentation" title="Lien permanent vers ce titre">¶</a></h1>
 <p>Vers une documentation automatique et structurée à base de jupyter notebooks</p>
-<p><input checked="" type="checkbox"/>  2021-03-09: Get a french-english linking version and using items instead of schemas by Xiaoou</p>
+<div class="admonition-actualites-au-fil-de-l-eau admonition">
+<p class="admonition-title">Actualités au fil de l’eau…</p>
+<p><input checked="" type="checkbox"/>  2021-03-01: Revise the original xml file to add english ids and identify the non wino items as 000 by <em>Xiaoou</em> -&gt; <cite>Winograd_FR_V2.xml</cite></p>
+<p><input checked="" type="checkbox"/>  2021-03-08: Clean pmi data to get question answer pairs by <em>Xiaoou</em> -&gt; <cite>pmi_frwac_alt_corrected.json</cite> <span class="xref std std-doc">01_french_data_cleaning</span></p>
+<p><input checked="" type="checkbox"/>  2021-03-09: Get a french-english linking version and using items instead of schemas by <em>Xiaoou</em></p>
 <p><input type="checkbox"/>  2021-03-10: Get a french-english linking version and using items instead of schemas by Xiaoou</p>
+</div>
 <p>Données :</p>
 <div class="table-wrapper"><table class="colwidths-given docutils align-default" id="id1">
 <caption><span class="caption-text">Data</span><a class="headerlink" href="#id1" title="Lien permanent vers ce tableau">¶</a></caption>
@@ -160,7 +165,7 @@
 <tr class="row-even"><td><p>Winograd_FR_V2.xml</p></td>
 <td><p>frenchdata</p></td>
 <td><p>fr</p></td>
-<td><p>original french winograd xml file</p></td>
+<td><p>original french winograd xml file with english ids revised</p></td>
 </tr>
 <tr class="row-odd"><td><p>wino285.json</p></td>
 <td><p>englishdata</p></td>
@@ -203,7 +208,7 @@
               <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
               <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
             |
-            <a class="muted-link" href="sources/index.rst.txt"
+            <a class="muted-link" href="_sources/index.rst.txt"
                rel="nofollow">
               Montrer le code source
             </a>

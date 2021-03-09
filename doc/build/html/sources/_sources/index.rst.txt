@@ -21,7 +21,7 @@ Vers une documentation automatique et structurée à base de jupyter notebooks
 
     |uncheck|  2021-03-09: Get a french-english linking version and using items instead of schemas by *Xiaoou*
 
-    |uncheck|  2021-03-10: Get a french-english linking version and using items instead of schemas by Xiaoou
+    |uncheck|  2021-03-10: Calculate pmi with scraper and compare with Bert no context
 
 .. toctree::
    :maxdepth: 2

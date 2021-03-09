@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Recherche" href="search.html" /><link rel="next" title="xiaoou wang" href="xiaoou/index.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Recherche" href="search.html" /><link rel="next" title="Cette section documente tout ce qu’a fait Xiaoou Wang dans le cadre du stage Winograd" href="xiaoou/index.html" />
 
     <meta name="generator" content="sphinx-3.5.1, furo 2021.02.28.beta28"/>
         <title>Home - Documentation winograd-fr</title>
@@ -106,14 +106,9 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-scroll"><div class="sidebar-tree">
-  <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="xiaoou/index.html">xiaoou wang</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/01_linux.html">1. wino data related</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/02_ipython.html">2. wino pmi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/03_numpy.html">3. wino-biblio</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/test.html">4. this is a test</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/testR.html">5. a R example</a></li>
+  <ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="xiaoou/index.html">Cette section documente tout ce qu’a fait Xiaoou Wang dans le cadre du stage Winograd</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="xiaoou/01_french_pmi.html">1. French pmi calculation</a></li>
 </ul>
 </li>
 </ul>
@@ -132,15 +127,11 @@
         </label>
         <div class="section" id="welcome-to-wino-fr-s-documentation">
 <h1>Welcome to wino-fr’s documentation!<a class="headerlink" href="#welcome-to-wino-fr-s-documentation" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Vers une documentation automatique et structurée à base de jupyter notebooks.</p>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="xiaoou/index.html">xiaoou wang</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/01_linux.html">1. wino data related</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/02_ipython.html">2. wino pmi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/03_numpy.html">3. wino-biblio</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/test.html">4. this is a test</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/testR.html">5. a R example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xiaoou/index.html">Cette section documente tout ce qu’a fait Xiaoou Wang dans le cadre du stage Winograd</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="xiaoou/01_french_pmi.html">1. French pmi calculation</a></li>
 </ul>
 </li>
 </ul>
@@ -156,7 +147,7 @@
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">xiaoou wang</div>
+                <div class="title">Cette section documente tout ce qu’a fait Xiaoou Wang dans le cadre du stage Winograd</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -171,7 +162,7 @@
               <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
               <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
             |
-            <a class="muted-link" href="sources/index.rst.txt"
+            <a class="muted-link" href="_sources/index.rst.txt"
                rel="nofollow">
               Montrer le code source
             </a>

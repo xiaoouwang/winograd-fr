@@ -3,7 +3,6 @@ Welcome to Wino-fr's documentation page!
 ****************************************
 
 `Winograd Schema Challenge in French <http://commonsensereasoning.org/winograd.html>`_ by researchers at `Lattice <https://www.lattice.cnrs.fr/>`_
-###################################################################################################
 
 .. |check| raw:: html
 

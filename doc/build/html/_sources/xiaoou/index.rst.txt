@@ -1,5 +1,5 @@
-xiaoou wang
-==========
+Cette section documente tout ce qu'a fait Xiaoou Wang dans le cadre du stage Winograd
+================================
 
 Ceci est une ébauche pour la documentation de winograd-fr.
 
@@ -7,8 +7,4 @@ Ceci est une ébauche pour la documentation de winograd-fr.
     :maxdepth: 2
     :numbered: 2
 
-    01_linux
-    02_ipython
-    03_numpy
-    test.ipynb
-    testR.ipynb
+    01_french_pmi.ipynb

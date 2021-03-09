@@ -1,9 +1,9 @@
 ****************************************
-Welcome to wino-fr's documentation!
+Welcome to Wino-fr's documentation page!
 ****************************************
 
-Vers une documentation automatique et structurée à base de jupyter notebooks
-#################################################################################
+`Winograd Schema Challenge in French <http://commonsensereasoning.org/winograd.html>`_ by researchers at `Lattice <https://www.lattice.cnrs.fr/>`_
+###################################################################################################
 
 .. |check| raw:: html
 

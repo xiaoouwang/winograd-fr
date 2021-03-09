@@ -1,0 +1,129 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.6-final"
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "base",
+   "language": "python",
+   "display_name": "Python3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "source": [
+    "# French data cleaning"
+   ],
+   "cell_type": "markdown",
+   "metadata": {
+    "pycharm": {
+     "name": "#%% md\n"
+    }
+   }
+  },
+  {
+   "cell_type": "markdown",
+   "source": [
+    "## Previously by Olga et Pascal\n",
+    "\n",
+    "Le fichier csv `pmi_frwac.csv` n'est pas très visible et contient trop d'informations."
+   ],
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%% md\n"
+    }
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "outputs": [],
+   "source": [
+    "# append custom functions created by xiaoou to path\n",
+    "import os,sys,inspect\n",
+    "current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))\n",
+    "parent_dir = os.path.dirname(current_dir)\n",
+    "source_dir = os.path.join(parent_dir,\"src_page\")\n",
+    "sys.path.insert(0,source_dir)\n",
+    "# set data directory\n",
+    "data_dir = r\"../../../frenchdata/\""
+   ],
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%%\n"
+    }
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 85,
+   "outputs": [],
+   "source": [
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "import importlib\n",
+    "import sys\n",
+    "importlib.reload(sys.modules[\"utils_xo\"])\n",
+    "from utils_xo import *"
+   ],
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%%\n"
+    }
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 86,
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "/opt/anaconda3/lib/python3.7/site-packages/pandas/core/frame.py:3997: SettingWithCopyWarning: \n",
+      "A value is trying to be set on a copy of a slice from a DataFrame\n",
+      "\n",
+      "See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n",
+      "  errors=errors,\n"
+     ]
+    }
+   ],
+   "source": [
+    "fr_pmi_ancien_alt = xo_cleanfrwac_alt(data_dir)\n",
+    "xo_write_json(data_dir+\"pmi_frwac_alt.json\",fr_pmi_ancien_alt)"
+   ],
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%%\n"
+    }
+   }
+  },
+  {
+   "cell_type": "markdown",
+   "source": [
+    "## Manual correction\n",
+    "\n",
+    "On a dû corriger des fautes de natures très diverses (manque d'espace, problèmes de case) dans le fichier json, ce qui donne lieu à `pmi_frwac_alt_corrected` qui comprend tous les schémas dont il est possible de créer des paires de question/réponse.\n"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  }
+ ]
+}

@@ -128,7 +128,8 @@
         <div class="section" id="welcome-to-wino-fr-s-documentation">
 <h1>Welcome to wino-fr’s documentation!<a class="headerlink" href="#welcome-to-wino-fr-s-documentation" title="Lien permanent vers ce titre">¶</a></h1>
 <p>Vers une documentation automatique et structurée à base de jupyter notebooks</p>
-<p><input checked="" type="checkbox"/> Get a french-english linking version and using items instead of schemas</p>
+<p><input checked="" type="checkbox"/>  2021-03-09: Get a french-english linking version and using items instead of schemas
+<input checked="" type="checkbox"/>  2021-03-10: Get a french-english linking version and using items instead of schemas</p>
 <p>Données :</p>
 <div class="table-wrapper"><table class="colwidths-given docutils align-default" id="id1">
 <caption><span class="caption-text">Data</span><a class="headerlink" href="#id1" title="Lien permanent vers ce tableau">¶</a></caption>
@@ -202,7 +203,7 @@
               <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
               <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
             |
-            <a class="muted-link" href="sources/index.rst.txt"
+            <a class="muted-link" href="_sources/index.rst.txt"
                rel="nofollow">
               Montrer le code source
             </a>

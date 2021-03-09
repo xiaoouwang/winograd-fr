@@ -2,6 +2,7 @@ import torch
 import pandas as pd
 from os import walk
 import numpy as np
+import json
 
 def xo_merge_files(path_in, path_out, extension):
     # initiate a empty string
@@ -121,8 +122,8 @@ def xo_computer_score(pd_good):
     print("qualite", round((counter_correct / (counter_total - counter_noresponse)) * 100, 2))
     print("reussite", round(((counter_correct + counter_noresponse / 2) / counter_total) * 100, 2))
 
-def xo_cleanfrwac_alt(data_dir):
-    fr_pmi_ancien = pd.read_csv(data_dir + "pmi_frwac.csv")
+def xo_cleanfrwac_alt(fpath):
+    fr_pmi_ancien = pd.read_csv(fpath)
     # delete second and 3rd rows and reset index
     fr_pmi_ancien.drop([0, 1], inplace=True)
     fr_pmi_ancien.reset_index(drop=True, inplace=True)
@@ -139,3 +140,8 @@ def xo_cleanfrwac_alt(data_dir):
     # clean a non existence row
     fr_pmi_ancien_alt.drop([131], inplace=True)
     return fr_pmi_ancien_alt
+
+def xo_read_json(path):
+    with open(path) as f:
+        data = json.load(f)
+    return data

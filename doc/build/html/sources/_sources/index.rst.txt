@@ -7,7 +7,8 @@ Vers une documentation automatique et structurée à base de jupyter notebooks
 
     <input checked=""  type="checkbox">
 
-|check| Get a french-english linking version and using items instead of schemas
+|check|  2021-03-09: Get a french-english linking version and using items instead of schemas
+|check|  2021-03-10: Get a french-english linking version and using items instead of schemas
 
 
 Données :

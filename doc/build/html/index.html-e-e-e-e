@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Recherche" href="search.html" /><link rel="next" title="Xiaoou Wang stage Winograd" href="xiaoou/index.html" />
 
     <meta name="generator" content="sphinx-3.5.1, furo 2021.02.28.beta28"/>
-        <title>Home - Documentation winograd-fr</title>
+        <title>Home - Documentation Winograd-fr</title>
       <link rel="stylesheet" href="static/styles/furo.css?digest=be5985a4059b5c2cd56ed0804790452beca62674">
     <link rel="stylesheet" href="static/pygments.css">
     <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="static/pygments_dark.css">
@@ -85,7 +85,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="#"><div class="brand">Documentation winograd-fr </div></a>
+      <a href="#"><div class="brand">Documentation Winograd-fr </div></a>
     </div>
     <div class="header-right">
       <label class="toc-overlay-icon toc-header-icon" for="__toc">
@@ -99,7 +99,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="#">
   
   
-  <span class="sidebar-brand-text">Documentation winograd-fr </span>
+  <span class="sidebar-brand-text">Documentation Winograd-fr </span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html">
   <input class="sidebar-search" placeholder=Recherche name="q">
@@ -135,7 +135,7 @@
 <p><input checked="" type="checkbox"/>  2021-03-01: Revise the original xml file to add english ids and identify the non wino items as <cite>000</cite> by <em>Xiaoou</em> -&gt; <cite>winograd_fr_v2.xml</cite></p>
 <p><input checked="" type="checkbox"/>  2021-03-08: Clean pmi data to get question answer pairs by <em>Xiaoou</em> -&gt; <cite>pmi_frwac_alt_corrected.json</cite> <a class="reference internal" href="xiaoou/01_french_data_cleaning.html"><span class="doc">French data cleaning</span></a></p>
 <p><input type="checkbox"/>  2021-03-09: Get a french-english linking version and using items instead of schemas by <em>Xiaoou</em></p>
-<p><input type="checkbox"/>  2021-03-10: Get a french-english linking version and using items instead of schemas by Xiaoou</p>
+<p><input type="checkbox"/>  2021-03-10: Calculate pmi with scraper and compare with Bert no context</p>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
@@ -207,14 +207,14 @@
         </div>
 
         <div class="related-information">
-              Copyright &#169; 2021, lattice
+              Copyright &#169; 2021, Lattice
             |
             Built with <a href="https://www.sphinx-doc.org/">Sphinx</a>
               and
               <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
               <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
             |
-            <a class="muted-link" href="sources/index.rst.txt"
+            <a class="muted-link" href="_sources/index.rst.txt"
                rel="nofollow">
               Montrer le code source
             </a>

@@ -19,7 +19,7 @@ Vers une documentation automatique et structurée à base de jupyter notebooks
 
     |check|  2021-03-08: Clean pmi data to get question answer pairs by *Xiaoou* -> `pmi_frwac_alt_corrected.json` :doc:`xiaoou/01_french_data_cleaning`
 
-    |uncheck|  2021-03-09: Get a french-english linking version and using items instead of schemas by *Xiaoou*
+    |uncheck|  2021-03-10: Get a french-english linking version and using items instead of schemas by *Xiaoou*
 
     |uncheck|  2021-03-10: Calculate pmi with scraper and compare with Bert no context
 

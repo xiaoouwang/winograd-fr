@@ -1,5 +1,5 @@
 ****************************************
-Welcome to Wino-fr's documentation page!
+Welcome to Wino-fr's documentation page
 ****************************************
 
 `Winograd Schema Challenge in French <http://commonsensereasoning.org/winograd.html>`_ by researchers at `Lattice <https://www.lattice.cnrs.fr/>`_
@@ -17,7 +17,7 @@ Welcome to Wino-fr's documentation page!
 
    Paper published at Actes de la Conférence sur le Traitement Automatique des Langues Naturelles (TALN) PFIA 2019 by `Olga Seminck, Vincent Segonne, Pascal Amsili`,  check `Modèles de langue appliqués aux schémas Winograd français (Language Models applied to French Winograd Schemas) <https://www.aclweb.org/anthology/2019.jeptalnrecital-court.20/>`_
 
-.. admonition:: Au fil de l'eau...
+.. admonition:: Au fil de l'eau
 
     |check|  2021-03-01: Revise the original xml file to add english ids and identify the non wino items as `000` by *Xiaoou* -> `winograd_fr_v2.xml`
 

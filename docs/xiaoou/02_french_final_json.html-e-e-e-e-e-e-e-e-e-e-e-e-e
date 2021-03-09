@@ -390,7 +390,7 @@ div.rendered_html tbody tr:hover {
 <span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="p">[</span><span class="s2">"utils_xo"</span><span class="p">])</span>
 <span class="kn">from</span> <span class="nn">utils_xo</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="c1"># set data directory</span>
-<span class="n">data_dir</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"../../../frenchdata/"</span>
+<span class="n">data_dir</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"../../../data/french/"</span>
 </pre></div>
 </div>
 </div>
@@ -1006,7 +1006,7 @@ div.rendered_html tbody tr:hover {
               <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
               <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
             |
-            <a class="muted-link" href="../sources/xiaoou/02_french_final_json.ipynb.txt"
+            <a class="muted-link" href="../_sources/xiaoou/02_french_final_json.ipynb.txt"
                rel="nofollow">
               Montrer le code source
             </a>

@@ -1,4 +1,4 @@
-Xiaoou Wang stage Winograd
+Xiaoou Wang Internship Winograd
 ================================
 
 Cette section documente la contribution de Xiaoou Wang au projet wino-fr.

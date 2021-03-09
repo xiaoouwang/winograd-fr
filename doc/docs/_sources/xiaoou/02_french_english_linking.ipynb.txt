@@ -1,0 +1,97 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "# append custom functions created by xiaoou to path\n",
+    "import os,sys,inspect\n",
+    "current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))\n",
+    "parent_dir = os.path.dirname(current_dir)\n",
+    "# set and add script directory\n",
+    "source_dir = os.path.join(parent_dir,\"src_page\")\n",
+    "sys.path.insert(0,source_dir)\n",
+    "# set data directory\n",
+    "data_dir = r\"../../../frenchdata/\"\n",
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "import importlib\n",
+    "import sys\n",
+    "from utils_xo import *\n",
+    "importlib.reload(sys.modules[\"utils_xo\"])\n",
+    "from utils_xo import *"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "import xml.etree.ElementTree as ET\n",
+    "import re\n",
+    "tree_fr = ET.parse(data_dir+'Winograd_FR_V2.xml')\n",
+    "root_fr = tree_fr.getroot()\n",
+    "root_fr.tag\n",
+    "french_ids = []\n",
+    "for elem in root_fr.findall(\"./schema\"):\n",
+    "    if int(elem.attrib['engn']) in associate_wino_ids:\n",
+    "        french_ids.append((int(elem.attrib['id']),int(elem.attrib['engn'])))"
+   ],
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%%\n"
+    }
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [],
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%%\n"
+    }
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [],
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%%\n"
+    }
+   }
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "name": "base",
+   "language": "python",
+   "display_name": "Python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 2
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython2",
+   "version": "2.7.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 0
+}

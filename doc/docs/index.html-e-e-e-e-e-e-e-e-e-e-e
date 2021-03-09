@@ -88,7 +88,7 @@
       <a href="#"><div class="brand">Documentation winograd-fr </div></a>
     </div>
     <div class="header-right">
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
     </div>
@@ -107,8 +107,7 @@
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="xiaoou/index.html">Xiaoou Wang stage Winograd</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/01_french_data_cleaning.html">1. French data cleaning</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="xiaoou/index.html">Xiaoou Wang stage Winograd</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -122,19 +121,68 @@
   <main class="main">
     <div class="content">
       <article role="main">
-        <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+        <label class="toc-overlay-icon toc-content-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
         <div class="section" id="welcome-to-wino-fr-s-documentation">
 <h1>Welcome to wino-fr’s documentation!<a class="headerlink" href="#welcome-to-wino-fr-s-documentation" title="Lien permanent vers ce titre">¶</a></h1>
-<p>Vers une documentation automatique et structurée à base de jupyter notebooks.</p>
+<div class="section" id="vers-une-documentation-automatique-et-structuree-a-base-de-jupyter-notebooks">
+<h2>Vers une documentation automatique et structurée à base de jupyter notebooks<a class="headerlink" href="#vers-une-documentation-automatique-et-structuree-a-base-de-jupyter-notebooks" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="admonition-actualites-au-fil-de-l-eau admonition">
+<p class="admonition-title">Actualités au fil de l’eau…</p>
+<p><input checked="" type="checkbox"/>  2021-03-01: Revise the original xml file to add english ids and identify the non wino items as 000 by <em>Xiaoou</em> -&gt; <cite>winograd_fr_v2.xml</cite></p>
+<p><input checked="" type="checkbox"/>  2021-03-08: Clean pmi data to get question answer pairs by <em>Xiaoou</em> -&gt; <cite>pmi_frwac_alt_corrected.json</cite> <a class="reference internal" href="xiaoou/01_french_data_cleaning.html"><span class="doc">French data cleaning</span></a></p>
+<p><input checked="" type="checkbox"/>  2021-03-09: Get a french-english linking version and using items instead of schemas by <em>Xiaoou</em></p>
+<p><input type="checkbox"/>  2021-03-10: Get a french-english linking version and using items instead of schemas by Xiaoou</p>
+</div>
+<div class="section" id="donnees">
+<h3>Données<a class="headerlink" href="#donnees" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="table-wrapper"><table class="colwidths-given docutils align-default" id="id1">
+<caption><span class="caption-text">Data Overview</span><a class="headerlink" href="#id1" title="Lien permanent vers ce tableau">¶</a></caption>
+<colgroup>
+<col style="width: 23%"/>
+<col style="width: 15%"/>
+<col style="width: 15%"/>
+<col style="width: 46%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>name</p></th>
+<th class="head"><p>directory</p></th>
+<th class="head"><p>language</p></th>
+<th class="head"><p>info</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>pmi_frwac.csv</p></td>
+<td><p>frenchdata</p></td>
+<td><p>fr</p></td>
+<td><p>original pmi data from olga/pascal</p></td>
+</tr>
+<tr class="row-odd"><td><p>pmi_frwac_alt_corrected.json</p></td>
+<td><p>frenchdata</p></td>
+<td><p>fr</p></td>
+<td><p>question/answer pairs for new pmi calculation frTenten</p></td>
+</tr>
+<tr class="row-even"><td><p>winograd_fr_v2.xml</p></td>
+<td><p>frenchdata</p></td>
+<td><p>fr</p></td>
+<td><p>original french winograd xml file with english ids revised</p></td>
+</tr>
+<tr class="row-odd"><td><p>wino285.json</p></td>
+<td><p>englishdata</p></td>
+<td><p>en</p></td>
+<td><p>285 english wino items</p></td>
+</tr>
+</tbody>
+</table></div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="xiaoou/index.html">Xiaoou Wang stage Winograd</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/01_french_data_cleaning.html">1. French data cleaning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xiaoou/index.html">Xiaoou Wang stage Winograd</a><ul class="simple">
 </ul>
 </li>
 </ul>
+</div>
+</div>
 </div>
 </div>
 
@@ -170,8 +218,30 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contenu
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Welcome to wino-fr’s documentation!</a><ul>
+<li><a class="reference internal" href="#vers-une-documentation-automatique-et-structuree-a-base-de-jupyter-notebooks">Vers une documentation automatique et structurée à base de jupyter notebooks</a><ul>
+<li><a class="reference internal" href="#donnees">Données</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

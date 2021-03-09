@@ -1,10 +1,10 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Recherche" href="../search.html" /><link rel="next" title="1. wino data related" href="01_linux.html" /><link rel="prev" title="Welcome to wino-fr’s documentation!" href="../index.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Recherche" href="../search.html" /><link rel="next" title="1. French data cleaning" href="01_french_data_cleaning.html" /><link rel="prev" title="Welcome to wino-fr’s documentation!" href="../index.html" />
 
     <meta name="generator" content="sphinx-3.5.1, furo 2021.02.28.beta28"/>
-        <title>xiaoou wang - Documentation winograd-fr</title>
+        <title>Xiaoou Wang stage Winograd - Documentation winograd-fr</title>
       <link rel="stylesheet" href="../static/styles/furo.css?digest=be5985a4059b5c2cd56ed0804790452beca62674">
     <link rel="stylesheet" href="../static/pygments.css">
     <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="../static/pygments_dark.css">
@@ -106,14 +106,9 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-scroll"><div class="sidebar-tree">
-  <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">xiaoou wang</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="01_linux.html">1. wino data related</a></li>
-<li class="toctree-l2"><a class="reference internal" href="02_ipython.html">2. wino pmi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="03_numpy.html">3. wino-biblio</a></li>
-<li class="toctree-l2"><a class="reference internal" href="test.html">4. this is a test</a></li>
-<li class="toctree-l2"><a class="reference internal" href="testR.html">5. a R example</a></li>
+  <ul class="current">
+<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">Xiaoou Wang stage Winograd</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="01_french_data_cleaning.html">1. French data cleaning</a></li>
 </ul>
 </li>
 </ul>
@@ -130,16 +125,17 @@
         <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <div class="section" id="xiaoou-wang">
-<h1>xiaoou wang<a class="headerlink" href="#xiaoou-wang" title="Lien permanent vers ce titre">¶</a></h1>
-<p>Ceci est une ébauche pour la documentation de winograd-fr.</p>
+        <div class="section" id="xiaoou-wang-stage-winograd">
+<h1>Xiaoou Wang stage Winograd<a class="headerlink" href="#xiaoou-wang-stage-winograd" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Cette section documente la contribution de Xiaoou Wang au projet wino-fr.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="01_linux.html">1. wino data related</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_ipython.html">2. wino pmi</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_numpy.html">3. wino-biblio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="test.html">4. this is a test</a></li>
-<li class="toctree-l1"><a class="reference internal" href="testR.html">5. a R example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="01_french_data_cleaning.html">1. French data cleaning</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="01_french_data_cleaning.html#Previously-by-Olga-et-Pascal">1.1. Previously by Olga et Pascal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_french_data_cleaning.html#Manual-correction">1.2. Manual correction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_french_data_cleaning.html#Add-the-alt-information-to-the-json-as-pmi_able">1.3. Add the alt information to the json as <code class="docutils literal notranslate"><span class="pre">pmi_able</span></code></a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -148,12 +144,12 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="01_linux.html">
+          <a class="next-page" href="01_french_data_cleaning.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title"><span class="section-number">1. </span>wino data related</div>
+                <div class="title"><span class="section-number">1. </span>French data cleaning</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -178,7 +174,7 @@
               <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
               <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
             |
-            <a class="muted-link" href="../sources/xiaoou/index.rst.txt"
+            <a class="muted-link" href="../_sources/xiaoou/index.rst.txt"
                rel="nofollow">
               Montrer le code source
             </a>

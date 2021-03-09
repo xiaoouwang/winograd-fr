@@ -379,7 +379,7 @@ div.rendered_html tbody tr:hover {
 <h2><span class="section-number">1.1. </span>Previously by Olga et Pascal<a class="headerlink" href="#Previously-by-Olga-et-Pascal" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Le fichier csv <code class="docutils literal notranslate"><span class="pre">pmi_frwac.csv</span></code> n’est pas très visible et contient trop d’informations.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[97]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -387,19 +387,12 @@ div.rendered_html tbody tr:hover {
 <span class="kn">import</span> <span class="nn">os</span><span class="o">,</span><span class="nn">sys</span><span class="o">,</span><span class="nn">inspect</span>
 <span class="n">current_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">inspect</span><span class="o">.</span><span class="n">getfile</span><span class="p">(</span><span class="n">inspect</span><span class="o">.</span><span class="n">currentframe</span><span class="p">())))</span>
 <span class="n">parent_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">current_dir</span><span class="p">)</span>
+<span class="c1"># set and add script directory</span>
 <span class="n">source_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">parent_dir</span><span class="p">,</span><span class="s2">"src_page"</span><span class="p">)</span>
 <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">source_dir</span><span class="p">)</span>
 <span class="c1"># set data directory</span>
 <span class="n">data_dir</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"../../../frenchdata/"</span>
-</pre></div>
-</div>
-</div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[85]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">importlib</span>
 <span class="kn">import</span> <span class="nn">sys</span>
@@ -408,32 +401,139 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[86]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[96]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">fr_pmi_ancien_alt</span> <span class="o">=</span> <span class="n">xo_cleanfrwac_alt</span><span class="p">(</span><span class="n">data_dir</span><span class="p">)</span>
+<span></span><span class="n">fr_pmi_ancien_alt</span> <span class="o">=</span> <span class="n">xo_cleanfrwac_alt</span><span class="p">(</span><span class="n">data_dir</span><span class="o">+</span><span class="s2">"pmi_frwac.csv"</span><span class="p">)</span>
 <span class="n">xo_write_json</span><span class="p">(</span><span class="n">data_dir</span><span class="o">+</span><span class="s2">"pmi_frwac_alt.json"</span><span class="p">,</span><span class="n">fr_pmi_ancien_alt</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area stderr docutils container">
-<div class="highlight"><pre>
-/opt/anaconda3/lib/python3.7/site-packages/pandas/core/frame.py:3997: SettingWithCopyWarning:
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  errors=errors,
-</pre></div></div>
-</div>
 </div>
 <div class="section" id="Manual-correction">
 <h2><span class="section-number">1.2. </span>Manual correction<a class="headerlink" href="#Manual-correction" title="Lien permanent vers ce titre">¶</a></h2>
-<p>On a dû corriger des fautes de natures très diverses (manque d’espace, problèmes de case) dans le fichier json, ce qui donne lieu à <code class="docutils literal notranslate"><span class="pre">pmi_frwac_alt_corrected</span></code> qui comprend tous les schémas dont il est possible de créer des paires de question/réponse.</p>
+<p>J’ai dû corriger des fautes de natures très diverses (manque d’espace, problèmes de case) dans le fichier json, ce qui donne lieu à <code class="docutils literal notranslate"><span class="pre">pmi_frwac_alt_corrected</span></code> qui comprend tous les schémas dont il est possible de créer des paires de question/réponse.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[106]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">pmi_corrected</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="n">data_dir</span><span class="o">+</span><span class="s2">"pmi_frwac_alt_corrected.json"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">pmi_corrected</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="n">pmi_corrected</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+(93, 6)
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[106]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<div class="table-wrapper"><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>schema</th>
+<th>type</th>
+<th>nb_npropre</th>
+<th>r0</th>
+<th>r1</th>
+<th>question</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>1</td>
+<td>alt</td>
+<td>0</td>
+<td>coupe</td>
+<td>valise</td>
+<td>Qu'est-ce qui est trop grand/petit ?</td>
+</tr>
+<tr>
+<th>1</th>
+<td>2</td>
+<td>alt</td>
+<td>2</td>
+<td>Paul</td>
+<td>Georges</td>
+<td>Qui n'a pas réussi/n'a pas répondu ?</td>
+</tr>
+<tr>
+<th>2</th>
+<td>3</td>
+<td>alt</td>
+<td>0</td>
+<td>avocat</td>
+<td>témoin</td>
+<td>Qui a refusé de répéter/répondre à la question ?</td>
+</tr>
+<tr>
+<th>3</th>
+<td>4</td>
+<td>alt</td>
+<td>1</td>
+<td>Nicolas</td>
+<td>fils</td>
+<td>Qui était trop faible/lourd ?</td>
+</tr>
+<tr>
+<th>4</th>
+<td>5</td>
+<td>alt</td>
+<td>0</td>
+<td>collégien</td>
+<td>lycéen</td>
+<td>Qui a-t-on puni/défendu ?</td>
+</tr>
+</tbody>
+</table></div>
+</div></div>
+</div>
+</div>
+<div class="section" id="Add-the-alt-information-to-the-json-as-pmi_able">
+<h2><span class="section-number">1.3. </span>Add the alt information to the json as <code class="docutils literal notranslate"><span class="pre">pmi_able</span></code><a class="headerlink" href="#Add-the-alt-information-to-the-json-as-pmi_able" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[109]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># rename type to pmi_able and change alt to 1</span>
+<span class="n">pmi_corrected</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">"type"</span><span class="p">:</span><span class="s2">"pmi_able"</span><span class="p">},</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">pmi_corrected</span><span class="p">[</span><span class="s1">'pmi_able'</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"alt"</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">pmi_corrected</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="c1"># rewrite to json file</span>
+<span class="n">xo_write_json</span><span class="p">(</span><span class="n">data_dir</span><span class="o">+</span><span class="s2">"pmi_frwac_alt_corrected.json"</span><span class="p">,</span><span class="n">pmi_corrected</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 
@@ -463,7 +563,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
               <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
               <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
             |
-            <a class="muted-link" href="../_sources/xiaoou/01_french_data_cleaning.ipynb.txt"
+            <a class="muted-link" href="../sources/xiaoou/01_french_data_cleaning.ipynb.txt"
                rel="nofollow">
               Montrer le code source
             </a>
@@ -486,6 +586,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <li><a class="reference internal" href="#">1. French data cleaning</a><ul>
 <li><a class="reference internal" href="#Previously-by-Olga-et-Pascal">1.1. Previously by Olga et Pascal</a></li>
 <li><a class="reference internal" href="#Manual-correction">1.2. Manual correction</a></li>
+<li><a class="reference internal" href="#Add-the-alt-information-to-the-json-as-pmi_able">1.3. Add the alt information to the json as <code class="docutils literal notranslate"><span class="pre">pmi_able</span></code></a></li>
 </ul>
 </li>
 </ul>

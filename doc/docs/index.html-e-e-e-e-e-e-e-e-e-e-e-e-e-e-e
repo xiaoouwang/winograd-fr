@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Recherche" href="search.html" /><link rel="next" title="xiaoou wang" href="xiaoou/index.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Recherche" href="search.html" /><link rel="next" title="Xiaoou Wang stage Winograd" href="xiaoou/index.html" />
 
     <meta name="generator" content="sphinx-3.5.1, furo 2021.02.28.beta28"/>
         <title>Home - Documentation winograd-fr</title>
@@ -106,14 +106,9 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-scroll"><div class="sidebar-tree">
-  <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="xiaoou/index.html">xiaoou wang</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/01_linux.html">1. wino data related</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/02_ipython.html">2. wino pmi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/03_numpy.html">3. wino-biblio</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/test.html">4. this is a test</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/testR.html">5. a R example</a></li>
+  <ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="xiaoou/index.html">Xiaoou Wang stage Winograd</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="xiaoou/01_french_data_cleaning.html">1. French data cleaning</a></li>
 </ul>
 </li>
 </ul>
@@ -132,15 +127,57 @@
         </label>
         <div class="section" id="welcome-to-wino-fr-s-documentation">
 <h1>Welcome to wino-fr’s documentation!<a class="headerlink" href="#welcome-to-wino-fr-s-documentation" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Vers une documentation automatique et structurée à base de jupyter notebooks</p>
+<div class="admonition-actualites-au-fil-de-l-eau admonition">
+<p class="admonition-title">Actualités au fil de l’eau…</p>
+<p><input checked="" type="checkbox"/>  2021-03-01: Revise the original xml file to add english ids and identify the non wino items as 000 by <em>Xiaoou</em> -&gt; <cite>Winograd_FR_V2.xml</cite></p>
+<p><input checked="" type="checkbox"/>  2021-03-08: Clean pmi data to get question answer pairs by <em>Xiaoou</em> -&gt; <cite>pmi_frwac_alt_corrected.json</cite> <span class="xref std std-doc">01_french_data_cleaning</span></p>
+<p><input checked="" type="checkbox"/>  2021-03-09: Get a french-english linking version and using items instead of schemas by <em>Xiaoou</em></p>
+<p><input type="checkbox"/>  2021-03-10: Get a french-english linking version and using items instead of schemas by Xiaoou</p>
+</div>
+<p>Données :</p>
+<div class="table-wrapper"><table class="colwidths-given docutils align-default" id="id1">
+<caption><span class="caption-text">Data</span><a class="headerlink" href="#id1" title="Lien permanent vers ce tableau">¶</a></caption>
+<colgroup>
+<col style="width: 23%"/>
+<col style="width: 15%"/>
+<col style="width: 15%"/>
+<col style="width: 46%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>name</p></th>
+<th class="head"><p>directory</p></th>
+<th class="head"><p>language</p></th>
+<th class="head"><p>info</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>pmi_frwac.csv</p></td>
+<td><p>frenchdata</p></td>
+<td><p>fr</p></td>
+<td><p>original pmi data from olga/pascal</p></td>
+</tr>
+<tr class="row-odd"><td><p>pmi_frwac_alt_corrected.json</p></td>
+<td><p>frenchdata</p></td>
+<td><p>fr</p></td>
+<td><p>question/answer pairs for new pmi calculation frTenten</p></td>
+</tr>
+<tr class="row-even"><td><p>Winograd_FR_V2.xml</p></td>
+<td><p>frenchdata</p></td>
+<td><p>fr</p></td>
+<td><p>original french winograd xml file with english ids revised</p></td>
+</tr>
+<tr class="row-odd"><td><p>wino285.json</p></td>
+<td><p>englishdata</p></td>
+<td><p>en</p></td>
+<td><p>285 english wino items</p></td>
+</tr>
+</tbody>
+</table></div>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="xiaoou/index.html">xiaoou wang</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/01_linux.html">1. wino data related</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/02_ipython.html">2. wino pmi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/03_numpy.html">3. wino-biblio</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/test.html">4. this is a test</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/testR.html">5. a R example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xiaoou/index.html">Xiaoou Wang stage Winograd</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="xiaoou/01_french_data_cleaning.html">1. French data cleaning</a></li>
 </ul>
 </li>
 </ul>
@@ -156,7 +193,7 @@
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">xiaoou wang</div>
+                <div class="title">Xiaoou Wang stage Winograd</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>

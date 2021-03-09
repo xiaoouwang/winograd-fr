@@ -133,6 +133,7 @@
 <li class="toctree-l1"><a class="reference internal" href="01_french_data_cleaning.html">1. French data cleaning</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="01_french_data_cleaning.html#Previously-by-Olga-et-Pascal">1.1. Previously by Olga et Pascal</a></li>
 <li class="toctree-l2"><a class="reference internal" href="01_french_data_cleaning.html#Manual-correction">1.2. Manual correction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_french_data_cleaning.html#Add-the-alt-information-to-the-json-as-pmi_able">1.3. Add the alt information to the json as <code class="docutils literal notranslate"><span class="pre">pmi_able</span></code></a></li>
 </ul>
 </li>
 </ul>

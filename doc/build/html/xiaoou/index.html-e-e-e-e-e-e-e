@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Recherche" href="../search.html" /><link rel="next" title="1. French data cleaning" href="01_french_data_cleaning.html" /><link rel="prev" title="Welcome to wino-fr’s documentation!" href="../index.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Recherche" href="../search.html" /><link rel="prev" title="Welcome to wino-fr’s documentation!" href="../index.html" />
 
     <meta name="generator" content="sphinx-3.5.1, furo 2021.02.28.beta28"/>
         <title>Xiaoou Wang stage Winograd - Documentation winograd-fr</title>
@@ -107,8 +107,7 @@
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul class="current">
-<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">Xiaoou Wang stage Winograd</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="01_french_data_cleaning.html">1. French data cleaning</a></li>
+<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">Xiaoou Wang stage Winograd</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -129,13 +128,6 @@
 <h1>Xiaoou Wang stage Winograd<a class="headerlink" href="#xiaoou-wang-stage-winograd" title="Lien permanent vers ce titre">¶</a></h1>
 <p>Cette section documente la contribution de Xiaoou Wang au projet wino-fr.</p>
 <div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="01_french_data_cleaning.html">1. French data cleaning</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="01_french_data_cleaning.html#Previously-by-Olga-et-Pascal">1.1. Previously by Olga et Pascal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="01_french_data_cleaning.html#Manual-correction">1.2. Manual correction</a></li>
-</ul>
-</li>
-</ul>
 </div>
 </div>
 
@@ -143,15 +135,7 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="01_french_data_cleaning.html">
-              <div class="page-info">
-                <div class="context">
-                  <span>Next</span>
-                </div>
-                <div class="title"><span class="section-number">1. </span>French data cleaning</div>
-              </div>
-              <svg><use href="#svg-arrow-right"></use></svg>
-            </a>
+          
           <a class="prev-page" href="../index.html">
               <svg><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">

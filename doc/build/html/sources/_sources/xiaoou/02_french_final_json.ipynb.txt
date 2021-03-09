@@ -1,0 +1,89 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "source": [
+    "# Towards a full version of french wino (split schemas)"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "import os,sys,inspect\n",
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "import importlib\n",
+    "import sys\n",
+    "from utils_xo import *\n",
+    "importlib.reload(sys.modules[\"utils_xo\"])\n",
+    "from utils_xo import *\n",
+    "# set data directory\n",
+    "data_dir = r\"../../../frenchdata/\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "outputs": [
+    {
+     "data": {
+      "text/plain": "[{'schema': '1',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'coupe',\n  'r1': 'valise',\n  'question': \"Qu'est-ce qui est trop grand/petit ?\"},\n {'schema': '2',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Paul',\n  'r1': 'Georges',\n  'question': \"Qui n'a pas réussi/n'a pas répondu ?\"},\n {'schema': '3',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'avocat',\n  'r1': 'témoin',\n  'question': 'Qui a refusé de répéter/répondre à la question ?'},\n {'schema': '4',\n  'pmi_able': 1,\n  'nb_npropre': 1,\n  'r0': 'Nicolas',\n  'r1': 'fils',\n  'question': 'Qui était trop faible/lourd ?'},\n {'schema': '5',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'collégien',\n  'r1': 'lycéen',\n  'question': 'Qui a-t-on puni/défendu ?'},\n {'schema': '6',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'carafe',\n  'r1': 'tasse',\n  'question': \"Qu'est-ce qui était vide/rempli ?\"},\n {'schema': '7',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Bernard',\n  'r1': 'Charles',\n  'question': 'Qui est très généreux/reconnaissant ?'},\n {'schema': '8',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Bernard',\n  'r1': 'Charles',\n  'question': 'Qui est blessé/ingrat ?'},\n {'schema': '9',\n  'pmi_able': 1,\n  'nb_npropre': 1,\n  'r0': 'escroc',\n  'r1': 'Samuel',\n  'question': \"Qui aurait pu gagner/perdre beaucoup d'argent ?\"},\n {'schema': '10',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'poisson',\n  'r1': 'ver',\n  'question': \"Qu'est-ce qui était affamé/délicieux ?\"},\n {'schema': '11',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'arbre',\n  'r1': 'toit',\n  'question': \"Qu'est-ce qui doit être déplacé/réparé ?\"},\n {'schema': '12',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'ancien',\n  'r1': 'nouveau',\n  'question': 'Joël va emménager dans/déménager de quelle maison ?'},\n {'schema': '13',\n  'pmi_able': 1,\n  'nb_npropre': 1,\n  'r0': 'gens',\n  'r1': 'livre, Paul',\n  'question': \"Qu'est-qui est enthousiaste/populaire ?\"},\n {'schema': '14',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Claire',\n  'r1': 'Sylvie',\n  'question': 'Qui était déçue/sortie ?'},\n {'schema': '15',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Claire',\n  'r1': 'Sylvie',\n  'question': \"Qui a invité l'autre dehors/à l'intérieur ?\"},\n {'schema': '16',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Simon',\n  'r1': 'Adam',\n  'question': 'Qui voulait/savait parler français couramment ?'},\n {'schema': '17',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'chemin',\n  'r1': 'lac',\n  'question': \"Qu'est ce que l'on a pas pu emprunter/atteindre ?\"},\n {'schema': '18',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'lac',\n  'r1': 'mer',\n  'question': 'C’était plus sûr de nager où ?'},\n {'schema': '19',\n  'pmi_able': 1,\n  'nb_npropre': 1,\n  'r0': 'Fred, Alice',\n  'r1': 'manteaux',\n  'question': \"Qui ou quoi ne sont pas préparés/suffisants pour l'hiver en Alaska ?\"},\n {'schema': '20',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Dupont',\n  'r1': 'Dubois',\n  'question': 'Qui était sur la route/mort depuis cinq ans ?'},\n {'schema': '21',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Henry',\n  'r1': 'Arnault',\n  'question': 'Qui a vécu plus tard/tôt ?'},\n {'schema': '22',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'planche',\n  'r1': 'scie',\n  'question': \"Qu'est-ce qui est trop épais/petit ?\"},\n {'schema': '23',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'renard',\n  'r1': 'poules',\n  'question': \"Qu'est-ce que je devrais tuer/protéger ?\"},\n {'schema': '24',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Fred',\n  'r1': 'George',\n  'question': \"Qui s'est levé/est revenu ? \"},\n {'schema': '25',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Fred',\n  'r1': 'Grand-père',\n  'question': 'Qui était remarquable ?'},\n {'schema': '26',\n  'pmi_able': 1,\n  'nb_npropre': 1,\n  'r0': 'Fred',\n  'r1': 'Père',\n  'question': 'Qui avait 24 ans/mois ?'},\n {'schema': '27',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Yakoutsk',\n  'r1': 'Kamchatka',\n  'question': 'Qui a gagner/perdu ?'},\n {'schema': '29',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'cerf',\n  'r1': 'loup',\n  'question': 'Quelle population devrait diminuer/augmenter ?'},\n {'schema': '30',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'archéologues',\n  'r1': 'hommes, préhistoriques',\n  'question': 'Qui cherchait des indices ?'},\n {'schema': '31',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'police',\n  'r1': 'gang',\n  'question': \"Qui essayait de stopper/d'organiser le trafic de drogue ?\"},\n {'schema': '32',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'gâteau',\n  'r1': 'frigo',\n  'question': \"Où est-ce qu'il y a beaucoup de sucre/restes ?\"},\n {'schema': '33',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'cheville',\n  'r1': 'béquille',\n  'question': \"Qu'est-ce qui devrait être guéries/superflues ?\"},\n {'schema': '34',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'partisan',\n  'r1': 'opposant',\n  'question': 'Qui était en minorité ?'},\n {'schema': '35',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'avoine',\n  'r1': 'chocolat',\n  'question': 'La prochaine fois, nous devrions faire moins de biscuits à quoi ?'},\n {'schema': '36',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'stylo',\n  'r1': 'café',\n  'question': 'Qu’est ce qui s’est rempli de café/d’encre ?'},\n {'schema': '37',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Stéphane',\n  'r1': 'Fred',\n  'question': \"Qui admire/influence l'autre ?\"},\n {'schema': '38',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'table',\n  'r1': 'porte',\n  'question': 'Qu’est ce qui est trop étroit ?'},\n {'schema': '42',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Claire',\n  'r1': 'Sylvie',\n  'question': 'Qui n’a pas eu de réponse/répondu ?'},\n {'schema': '43',\n  'pmi_able': 1,\n  'nb_npropre': 1,\n  'r0': 'Joël',\n  'r1': 'détective',\n  'question': 'Qui a reçu/livré le rapport final ?'},\n {'schema': '44',\n  'pmi_able': 1,\n  'nb_npropre': 1,\n  'r0': 'Gérard',\n  'r1': 'barman',\n  'question': 'La pinte vide/clé des toilettes de qui ?'},\n {'schema': '45',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Thomas',\n  'r1': 'Raphaël',\n  'question': 'Qui n’aime pas conduire tout seul/marcher ?'},\n {'schema': '46',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Benoît',\n  'r1': 'Jean',\n  'question': \"Qui n'avait pas/avait faim ?\"},\n {'schema': '47',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Benoît',\n  'r1': 'Jean',\n  'question': \"Ce n'était pas/C'était le tour de qui ?\"},\n {'schema': '48',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'homme',\n  'r1': 'garçon',\n  'question': 'Le dos/lit de qui ?'},\n {'schema': '50',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'père',\n  'r1': 'garçon',\n  'question': 'Lesbras/Le couffin de qui ?'},\n {'schema': '51',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'femme',\n  'r1': 'fille',\n  'question': 'La poitrine/volonté de qui ?'},\n {'schema': '52',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Vincenot',\n  'r1': 'Michel',\n  'question': 'Qui a pris sa retraite/un cancer ?'},\n {'schema': '53',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Claire',\n  'r1': 'Jeanine',\n  'question': \"Qui n'avait pas/avait faim ?\"},\n {'schema': '54',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Jérémy',\n  'r1': 'Robert',\n  'question': 'Qui a essuyé un refus/refusé ?'},\n {'schema': '55',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Kirilov',\n  'r1': 'Chatoff',\n  'question': 'Qui était le moins/plus populaire ?'},\n {'schema': '58',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'conseillers municipaux',\n  'r1': 'manifestants',\n  'question': 'Qui prônait la violence ?'},\n {'schema': '59',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Claire',\n  'r1': 'Suzanne',\n  'question': 'Qui a demandé du temps ?'},\n {'schema': '60',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Sarah',\n  'r1': 'Sabine',\n  'question': 'Qui a raté son départ ?'},\n {'schema': '61',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'sculpture',\n  'r1': 'étagère',\n  'question': 'Qu’est-ce qui est trop encombré ?'},\n {'schema': '63',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'François',\n  'r1': 'Thomas',\n  'question': 'Qui a vendu le grille-pain ?'},\n {'schema': '65',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Simon',\n  'r1': 'Marc',\n  'question': 'Qui n’a pas compris l’autre ?'},\n {'schema': '66',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'savon',\n  'r1': 'siphon',\n  'question': 'Qu’est-ce qui doit être retiré ?'},\n {'schema': '67',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'Rendez-vous',\n  'r1': 'train',\n  'question': 'Qu’est-ce qui a été retardé ?'},\n {'schema': '69',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'chiffon',\n  'r1': 'couteau',\n  'question': 'Qu’est-ce que j’ai mis au linge sale ?'},\n {'schema': '71',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'carafe',\n  'r1': 'étagère',\n  'question': 'Qu’est-ce qui était trop lourd ?'},\n {'schema': '72',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Pierre',\n  'r1': 'Adam',\n  'question': 'Qui aurait perdu ?'},\n {'schema': '73',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'pelouse',\n  'r1': 'arbre',\n  'question': 'Où est-ce qu’il faisait plus frais ?'},\n {'schema': '74',\n  'pmi_able': 1,\n  'nb_npropre': 1,\n  'r0': 'Anne',\n  'r1': 'fille',\n  'question': 'Qui est une mère épanouie/enfant adorable ?'},\n {'schema': '75',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'chien',\n  'r1': 'chat',\n  'question': 'Qui est resté en bas ?'},\n {'schema': '76',\n  'pmi_able': 1,\n  'nb_npropre': 1,\n  'r0': 'Jean',\n  'r1': 'jongleur',\n  'question': 'Qui était impressionnant ?'},\n {'schema': '77',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Boris',\n  'r1': 'Carlo',\n  'question': 'Qui était très attentionné ?'},\n {'schema': '78',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Marc',\n  'r1': 'Pierre',\n  'question': 'Qui aurait dû être plus sceptique ?'},\n {'schema': '79',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'violon',\n  'r1': 'morceau',\n  'question': 'Qu’est-ce que Marie possède depuis son enfance ?'},\n {'schema': '80',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'livre',\n  'r1': 'article',\n  'question': 'Qu’est-ce que Sarah rédigera quand elle rentrera du travail ?'},\n {'schema': '81',\n  'pmi_able': 1,\n  'nb_npropre': 100,\n  'r0': None,\n  'r1': None,\n  'question': 'SUPPRIME'},\n {'schema': '82',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Toulouse',\n  'r1': 'Lille',\n  'question': 'Dans quelle ville une minorité des consommateurs d’Esther habite ?'},\n {'schema': '83',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'scientifiques',\n  'r1': 'poissons',\n  'question': 'Qu’est -ce qui a débuté il y a deux ans ?'},\n {'schema': '84',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Thomas',\n  'r1': 'Raphaël',\n  'question': 'Thomas a déplacé le fou de qui ?'},\n {'schema': '85',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Lilianne',\n  'r1': 'Marie',\n  'question': 'Le silence de qui ?'},\n {'schema': '86',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Denis',\n  'r1': 'Benoît',\n  'question': 'Qui est cruel ?'},\n {'schema': '87',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Emma',\n  'r1': 'Jeannine',\n  'question': 'Qui a vu que l’autre était démarqué ?'},\n {'schema': '88',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'scooter',\n  'r1': 'bus',\n  'question': \"Qu'est ce qui roulait trop lentement ?\"},\n {'schema': '90',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'éponge',\n  'r1': 'coupe',\n  'question': \"Qu'est-ce qui était en cristal ?\"},\n {'schema': '91',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Jean',\n  'r1': 'Benoît',\n  'question': 'Qui est le plus grand ?'},\n {'schema': '96',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'nappe',\n  'r1': 'table',\n  'question': 'Montrer quoi ?'},\n {'schema': '97',\n  'pmi_able': 1,\n  'nb_npropre': 2,\n  'r0': 'Sylvie',\n  'r1': 'Marie',\n  'question': 'Qui est bavarde ?'},\n {'schema': '99',\n  'pmi_able': 1,\n  'nb_npropre': 1,\n  'r0': 'frère',\n  'r1': 'Joël',\n  'question': 'Qui a suivi moins/plus de cours de tennis ?'},\n {'schema': '100',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'tableau',\n  'r1': 'arbre',\n  'question': \"Qu'est-ce qui est à droite d'une maison ?\"},\n {'schema': '101',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'portable',\n  'r1': 'sac',\n  'question': \"Qu'est-ce qui doit être plus accessible ?\"},\n {'schema': '102',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'monument',\n  'r1': 'guide',\n  'question': \"Qu'est ce qui est complet ?\"},\n {'schema': '103',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'chat',\n  'r1': 'souris',\n  'question': 'Qui était très impatiente ?'},\n {'schema': '104',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'clé/clef',\n  'r1': 'serrure',\n  'question': \"Que'est-ce que je ne pouvait pas extirper ?\"},\n {'schema': '105',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'braqueur',\n  'r1': 'guichetier',\n  'question': 'Qui a été condamné ?'},\n {'schema': '106',\n  'pmi_able': 1,\n  'nb_npropre': 1,\n  'r0': 'Samuel',\n  'r1': 'parents',\n  'question': 'Qui est jeune ?'},\n {'schema': '107',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'renards',\n  'r1': 'lapins',\n  'question': 'Qui est nerveux ?'},\n {'schema': '108',\n  'pmi_able': 1,\n  'nb_npropre': 0,\n  'r0': 'pull',\n  'r1': 'gilet',\n  'question': \"Qu'est-ce qui est très démodé/beau ?\"},\n {'schema': '28s',\n  'pmi_able': 1,\n  'nb_npropre': 100,\n  'r0': 'têtard',\n  'r1': 'canard',\n  'question': \"Qui devrait se mettre à l'abri ?\"},\n {'schema': '28a',\n  'pmi_able': 1,\n  'nb_npropre': 100,\n  'r0': 'requin',\n  'r1': 'canard',\n  'question': \"Qui devrait se mettre à l'abri ?\"}]"
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "xo_read_json(data_dir+\"pmi_frwac_alt_corrected.json\")"
+   ],
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%%\n"
+    }
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [],
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%%\n"
+    }
+   }
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "name": "myenv",
+   "language": "python",
+   "display_name": "Python (myenv)"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 2
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython2",
+   "version": "2.7.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 0
+}

@@ -126,10 +126,9 @@
         <label class="toc-overlay-icon toc-content-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <div class="section" id="welcome-to-wino-fr-s-documentation">
-<h1>Welcome to wino-fr’s documentation!<a class="headerlink" href="#welcome-to-wino-fr-s-documentation" title="Lien permanent vers ce titre">¶</a></h1>
-<div class="section" id="vers-une-documentation-automatique-et-structuree-a-base-de-jupyter-notebooks">
-<h2>Vers une documentation automatique et structurée à base de jupyter notebooks<a class="headerlink" href="#vers-une-documentation-automatique-et-structuree-a-base-de-jupyter-notebooks" title="Lien permanent vers ce titre">¶</a></h2>
+        <div class="section" id="welcome-to-wino-fr-s-documentation-page">
+<h1>Welcome to Wino-fr’s documentation page!<a class="headerlink" href="#welcome-to-wino-fr-s-documentation-page" title="Lien permanent vers ce titre">¶</a></h1>
+<p><a class="reference external" href="http://commonsensereasoning.org/winograd.html">Winograd Schema Challenge in French</a> by researchers at <a class="reference external" href="https://www.lattice.cnrs.fr/">Lattice</a></p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Paper published at Proceedings of the 2nd Workshop on Coreference Resolution Beyond OntoNotes (CORBON 2017) by <cite>Pascal Amsili, Olga Seminck</cite>,  check <a class="reference external" href="https://www.aclweb.org/anthology/W17-1504/">A Google-Proof Collection of French Winograd Schemas</a></p>
@@ -152,7 +151,7 @@
 </ul>
 </div>
 <div class="section" id="donnees">
-<h3>Données<a class="headerlink" href="#donnees" title="Lien permanent vers ce titre">¶</a></h3>
+<h2>Données<a class="headerlink" href="#donnees" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="table-wrapper"><table class="colwidths-given docutils align-default" id="id1">
 <caption><span class="caption-text">Data Overview</span><a class="headerlink" href="#id1" title="Lien permanent vers ce tableau">¶</a></caption>
 <colgroup>
@@ -193,7 +192,6 @@
 </table></div>
 </div>
 </div>
-</div>
 
       </article>
       <footer>
@@ -219,7 +217,7 @@
               <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
               <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
             |
-            <a class="muted-link" href="sources/index.rst.txt"
+            <a class="muted-link" href="_sources/index.rst.txt"
                rel="nofollow">
               Montrer le code source
             </a>
@@ -239,11 +237,8 @@
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Welcome to wino-fr’s documentation!</a><ul>
-<li><a class="reference internal" href="#vers-une-documentation-automatique-et-structuree-a-base-de-jupyter-notebooks">Vers une documentation automatique et structurée à base de jupyter notebooks</a><ul>
+<li><a class="reference internal" href="#">Welcome to Wino-fr’s documentation page!</a><ul>
 <li><a class="reference internal" href="#donnees">Données</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>

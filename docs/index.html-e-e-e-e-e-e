@@ -139,8 +139,8 @@
 <p class="admonition-title">Au fil de l’eau</p>
 <p><input checked="" type="checkbox"/>  2021-03-01: Revise the original xml file to add english ids and identify the non wino items as <cite>000</cite> by <em>Xiaoou</em> -&gt; <cite>winograd_fr_v2.xml</cite></p>
 <p><input checked="" type="checkbox"/>  2021-03-08: Clean pmi data to get question answer pairs by <em>Xiaoou</em> -&gt; <cite>pmi_frwac_alt_corrected.json</cite> <a class="reference internal" href="xiaoou/01_french_data_cleaning.html"><span class="doc">French data cleaning</span></a></p>
-<p><input checked="" type="checkbox"/>  2021-03-10: Get a french-english linking version and using items instead of schemas by <em>Xiaoou</em> -&gt; <cite>pmi_frwac_withid.json</cite></p>
-<p><input checked="" type="checkbox"/>  2021-03-10: Build the complete version from xml by <em>Xiaoou</em> -&gt; winofr_final.json :doc: <cite>xiaoou/03_french_finalfinal_json</cite></p>
+<p><input checked="" type="checkbox"/>  2021-03-10: Get a french-english linking version and using items instead of schemas by <em>Xiaoou</em> -&gt; <cite>pmi_frwac_withid.json</cite> <a class="reference internal" href="xiaoou/02_french_final_json.html"><span class="doc">Towards a full version of french wino (split schemas)</span></a></p>
+<p><input checked="" type="checkbox"/>  2021-03-10: Build the complete version from xml by <em>Xiaoou</em> -&gt; winofr_final.json <a class="reference internal" href="xiaoou/03_french_finalfinal_json.html"><span class="doc">Towards a full version of french wino (final steps)</span></a></p>
 <p><input type="checkbox"/>  2021-03-10: Calculate pmi with scraper and compare with Bert no context</p>
 </div>
 <div class="toctree-wrapper compound">
@@ -172,22 +172,22 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p>pmi_frwac.csv</p></td>
-<td><p>frenchdata</p></td>
+<td><p>data/french</p></td>
 <td><p>fr</p></td>
 <td><p>original pmi data from olga/pascal</p></td>
 </tr>
 <tr class="row-odd"><td><p>pmi_frwac_alt_corrected.json</p></td>
-<td><p>frenchdata</p></td>
+<td><p>data/french</p></td>
 <td><p>fr</p></td>
 <td><p>question/answer pairs for new pmi calculation frTenten</p></td>
 </tr>
 <tr class="row-even"><td><p>winograd_fr_v2.xml</p></td>
-<td><p>frenchdata</p></td>
+<td><p>data/french</p></td>
 <td><p>fr</p></td>
 <td><p>original french winograd xml file with english ids revised</p></td>
 </tr>
 <tr class="row-odd"><td><p>wino285.json</p></td>
-<td><p>englishdata</p></td>
+<td><p>data/english</p></td>
 <td><p>en</p></td>
 <td><p>285 english wino items</p></td>
 </tr>
@@ -220,7 +220,7 @@
               <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
               <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
             |
-            <a class="muted-link" href="sources/index.rst.txt"
+            <a class="muted-link" href="_sources/index.rst.txt"
                rel="nofollow">
               Montrer le code source
             </a>

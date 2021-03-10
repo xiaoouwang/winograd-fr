@@ -1,4 +1,4 @@
-Xiaoou Wang Internship Winograd
+Xiaoou Wang Internship Winograd (2021/02/01 - 2021/07/31)
 ================================
 
 Cette section documente la contribution de Xiaoou Wang au projet Wino-fr.

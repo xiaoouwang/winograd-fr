@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Recherche" href="../search.html" /><link rel="next" title="1. French data cleaning" href="01_french_data_cleaning.html" /><link rel="prev" title="Welcome to Wino-fr’s documentation page" href="../index.html" />
 
     <meta name="generator" content="sphinx-3.5.1, furo 2021.02.28.beta28"/>
-        <title>Xiaoou Wang Internship Winograd - Documentation Winograd-fr</title>
+        <title>Xiaoou Wang Internship Winograd (2021/02/01 - 2021/07/31) - Documentation Winograd-fr</title>
       <link rel="stylesheet" href="../static/styles/furo.css">
     <link rel="stylesheet" href="../static/pygments.css">
     <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="../static/pygments_dark.css">
@@ -107,7 +107,7 @@
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul class="current">
-<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">Xiaoou Wang Internship Winograd</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">Xiaoou Wang Internship Winograd (2021/02/01 - 2021/07/31)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="01_french_data_cleaning.html">1. French data cleaning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="02_french_final_json.html">2. Towards a full version of french wino (split schemas)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="03_french_finalfinal_json.html">3. Towards a full version of french wino (final steps)</a></li>
@@ -127,8 +127,8 @@
         <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <div class="section" id="xiaoou-wang-internship-winograd">
-<h1>Xiaoou Wang Internship Winograd<a class="headerlink" href="#xiaoou-wang-internship-winograd" title="Lien permanent vers ce titre">¶</a></h1>
+        <div class="section" id="xiaoou-wang-internship-winograd-2021-02-01-2021-07-31">
+<h1>Xiaoou Wang Internship Winograd (2021/02/01 - 2021/07/31)<a class="headerlink" href="#xiaoou-wang-internship-winograd-2021-02-01-2021-07-31" title="Lien permanent vers ce titre">¶</a></h1>
 <p>Cette section documente la contribution de Xiaoou Wang au projet Wino-fr.</p>
 <div class="admonition-au-fil-de-l-eau admonition">
 <p class="admonition-title">Au fil de l’eau</p>
@@ -189,7 +189,7 @@
               <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
               <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
             |
-            <a class="muted-link" href="../sources/xiaoou/index.rst.txt"
+            <a class="muted-link" href="../_sources/xiaoou/index.rst.txt"
                rel="nofollow">
               Montrer le code source
             </a>

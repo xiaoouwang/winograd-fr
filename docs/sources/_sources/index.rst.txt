@@ -29,7 +29,8 @@ Welcome to Wino-fr's documentation page
 
     |uncheck|  2021-03-10: Calculate pmi with scraper and compare with Bert no context
 
- .. toctree::
+
+.. toctree::
    :maxdepth: 1
    :glob:
 

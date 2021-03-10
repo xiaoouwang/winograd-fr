@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Recherche" href="../search.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Recherche" href="../search.html" /><link rel="prev" title="1. French data cleaning" href="01_french_data_cleaning.html" />
 
     <meta name="generator" content="sphinx-3.5.1, furo 2021.02.28.beta28"/>
         <title>&lt;no title&gt; - Documentation winograd-fr</title>
@@ -438,7 +438,17 @@ div.rendered_html tbody tr:hover {
         
         <div class="related-pages">
           
-          
+          <a class="prev-page" href="01_french_data_cleaning.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title"><span class="section-number">1. </span>French data cleaning</div>
+                
+              </div>
+            </a>
         </div>
 
         <div class="related-information">
@@ -449,7 +459,7 @@ div.rendered_html tbody tr:hover {
               <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
               <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
             |
-            <a class="muted-link" href="../sources/xiaoou/02_french_english_linking.ipynb.txt"
+            <a class="muted-link" href="../_sources/xiaoou/02_french_english_linking.ipynb.txt"
                rel="nofollow">
               Montrer le code source
             </a>

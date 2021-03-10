@@ -129,11 +129,11 @@
         </label>
         <div class="section" id="welcome-to-wino-fr-s-documentation-page">
 <h1>Welcome to Wino-fr’s documentation page<a class="headerlink" href="#welcome-to-wino-fr-s-documentation-page" title="Lien permanent vers ce titre">¶</a></h1>
-<p><a class="reference external" href="http://commonsensereasoning.org/winograd.html">Winograd Schema Challenge in French</a> by researchers at <a class="reference external" href="https://www.lattice.cnrs.fr/">Lattice</a></p>
+<p><a class="reference external" href="http://commonsensereasoning.org/winograd.html">Winograd Schema Challenge in French</a> by researchers at <a class="reference external" href="https://www.lattice.cnrs.fr/">Lattice</a> and <a class="reference external" href="http://www.llf.cnrs.fr/fr/winograd-fr">Laboratoire de Linguistique Formelle</a>.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Paper published at Proceedings of the 2nd Workshop on Coreference Resolution Beyond OntoNotes (CORBON 2017) by <cite>Pascal Amsili, Olga Seminck</cite>,  check <a class="reference external" href="https://www.aclweb.org/anthology/W17-1504/">A Google-Proof Collection of French Winograd Schemas</a></p>
-<p>Paper published at Actes de la Conférence sur le Traitement Automatique des Langues Naturelles (TALN) PFIA 2019 by <cite>Olga Seminck, Vincent Segonne, Pascal Amsili</cite>,  check <a class="reference external" href="https://www.aclweb.org/anthology/2019.jeptalnrecital-court.20/">Modèles de langue appliqués aux schémas Winograd français (Language Models applied to French Winograd Schemas)</a></p>
+<p>Paper published at <cite>CORBON 2017</cite> by <cite>Pascal Amsili, Olga Seminck</cite>,  check <a class="reference external" href="https://www.aclweb.org/anthology/W17-1504/">A Google-Proof Collection of French Winograd Schemas</a></p>
+<p>Paper published at <cite>TALN</cite> by <cite>Olga Seminck, Vincent Segonne, Pascal Amsili</cite>,  check <a class="reference external" href="https://www.aclweb.org/anthology/2019.jeptalnrecital-court.20/">Modèles de langue appliqués aux schémas Winograd français (Language Models applied to French Winograd Schemas)</a></p>
 </div>
 <div class="admonition-au-fil-de-l-eau admonition">
 <p class="admonition-title">Au fil de l’eau</p>

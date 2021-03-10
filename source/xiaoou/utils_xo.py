@@ -41,9 +41,11 @@ def xo_write_file(path, content):
         f.write(content)
 
 def xo_write_json(path, dataframe):
-    with open(path, 'w', encoding='utf-8') as f:
-        dataframe.to_json(path, force_ascii=False,orient="records")
+    dataframe.to_json(path, force_ascii=False,orient="records")
 
+def xo_write_json_fromlist(path, ls):
+    with open(path, 'w', encoding='utf-8') as outfile:
+        json.dump(ls, outfile, ensure_ascii=False)
 
 def xo_count_words(s):
     return len(s.split())
@@ -135,6 +137,7 @@ def xo_cleanfrwac_alt(fpath):
     fr_pmi_ancien.dropna(how='all', inplace=True)
     fr_pmi_ancien['type'].replace(np.nan, "alt", inplace=True)
     fr_pmi_ancien['type'].replace("std", "alt", inplace=True)
+    # reorder columns
     fr_pmi_ancien = fr_pmi_ancien[["schema", "type", "nb_npropre", "r0", "r1", "question","special","alternate"]]
     fr_pmi_ancien_alt = fr_pmi_ancien[fr_pmi_ancien["type"] == "alt"]
     # clean a non existence row

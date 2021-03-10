@@ -1,0 +1,374 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "source": [
+    "# Towards a full version of french wino (split schemas)"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 134,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "import os,sys,inspect\n",
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "import importlib\n",
+    "import sys\n",
+    "from utils_xo import *\n",
+    "importlib.reload(sys.modules[\"utils_xo\"])\n",
+    "from utils_xo import *\n",
+    "pd.set_option('display.max_colwidth', None)\n",
+    "# set data directory\n",
+    "data_dir = r\"../../../data/french/\"\n",
+    "\n",
+    "import xml.etree.ElementTree as ET\n",
+    "import re"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "tree = ET.parse(data_dir + 'winograd_fr_v2.xml')\n",
+    "root = tree.getroot()"
+   ],
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%%\n"
+    }
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 73,
+   "outputs": [],
+   "source": [
+    "#* get id and schema for no 000 items\n",
+    "ids = []\n",
+    "french_schema_ids = []\n",
+    "for schema in root.findall(\"./\"):\n",
+    "    if schema.attrib['engn'] != \"00000\":\n",
+    "        ids.append(int(schema.attrib['engn']))\n",
+    "        french_schema_ids.append(int(schema.attrib['id']))"
+   ],
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%%\n"
+    }
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 74,
+   "outputs": [],
+   "source": [
+    "#* check if each id is odd, it's ok because not every schema nb is even\n",
+    "\n",
+    "# for id in ids:\n",
+    "#     if id%2 == 0:\n",
+    "#         print(id)"
+   ],
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%%\n"
+    }
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 91,
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "214\n"
+     ]
+    }
+   ],
+   "source": [
+    "#* make ids and french schema ids twice longer\n",
+    "double_ids = []\n",
+    "double_french_schema_ids = []\n",
+    "for id in ids:\n",
+    "    double_ids.append(id)\n",
+    "    double_ids.append(id+1)\n",
+    "for fr in french_schema_ids:\n",
+    "    double_french_schema_ids.append(fr)\n",
+    "    double_french_schema_ids.append(fr)\n",
+    "len_double_ids = len(double_ids)\n",
+    "len_double_french_schema_ids = len(double_french_schema_ids)\n",
+    "assert len_double_ids == len_double_french_schema_ids\n",
+    "print(len_double_ids)"
+   ],
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%%\n"
+    }
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 76,
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "214 items in french\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(f'{len(double_ids)} items in french')"
+   ],
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%%\n"
+    }
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 92,
+   "outputs": [],
+   "source": [
+    "#* add text and hypothesis: [texte] il mange trop -> [hypothese] il mange pas peu\n",
+    "#[ gather texts\n",
+    "items_a = []\n",
+    "items_b = []\n",
+    "\n",
+    "for schema in root.findall(\"schema\"):\n",
+    "    text_debut = schema.find(\".//txt1\").text.lstrip()\n",
+    "    text_middle = schema.find(\".//wordA\").text\n",
+    "    text_end = schema.find(\".//txt2\").text\n",
+    "    item_a = text_debut + text_middle + text_end\n",
+    "    text_debut = schema.find(\".//txt1\").text.lstrip()\n",
+    "    text_middle = schema.find(\".//wordB\").text\n",
+    "    text_end = schema.find(\".//txt2\").text\n",
+    "    item_b = text_debut + text_middle +  text_end\n",
+    "    items_a.append(item_a)\n",
+    "    items_b.append(item_b)\n",
+    "len_itemsa = len(items_a)\n",
+    "len_itemsb = len(items_b)\n",
+    "assert len_double_ids == len_itemsa + len_itemsb"
+   ],
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%%\n"
+    }
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 129,
+   "outputs": [],
+   "source": [
+    "items = []\n",
+    "for x,y in zip(items_a,items_b):\n",
+    "    items.append(x)\n",
+    "    items.append(y)"
+   ],
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%%\n"
+    }
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 112,
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "107\n",
+      "107\n",
+      "107\n",
+      "107\n"
+     ]
+    }
+   ],
+   "source": [
+    "#* add questions and answers, questiona should be followed by question b in the final list, the same for answers, the incorrect answer is the i in answerb or a\n",
+    "questions_a = []\n",
+    "questions_b = []\n",
+    "answers_a = []\n",
+    "answers_b = []\n",
+    "for schema in root.findall(\"schema\"):\n",
+    "    text_debut = schema.find(\".//qn1\").text\n",
+    "    text_middle = schema.find(\".//qwordA\").text\n",
+    "    text_end = schema.find(\".//qn2\").text\n",
+    "    # print(text_debut,text_middle,text_end)\n",
+    "    if not text_middle:\n",
+    "        text_middle = \"\"\n",
+    "    if not text_debut:\n",
+    "        text_debut = \"\"\n",
+    "    question_a = text_debut + text_middle + text_end\n",
+    "    text_debut = schema.find(\".//qn1\").text\n",
+    "    text_middle = schema.find(\".//qwordB\").text\n",
+    "    text_end = schema.find(\".//qn2\").text\n",
+    "    if not text_middle:\n",
+    "        text_middle = \"\"\n",
+    "    if not text_debut:\n",
+    "        text_debut = \"\"\n",
+    "    question_b = text_debut + text_middle +  text_end\n",
+    "    # print(text_debut,text_middle,text_end)\n",
+    "    answer_a = schema.find(\".//answer1\").text\n",
+    "    # print(answer_a)\n",
+    "    answer_b = schema.find(\".//answer2\").text\n",
+    "    # print(answer_b)\n",
+    "    questions_a.append(question_a)\n",
+    "    questions_b.append(question_b)\n",
+    "    answers_a.append(answer_a)\n",
+    "    answers_b.append(answer_b)\n",
+    "print(len(questions_a))\n",
+    "print(len(questions_b))\n",
+    "print(len(answers_a))\n",
+    "print(len(answers_b))\n",
+    "# 214\n",
+    "# clean the text\n",
+    "for ls in [answers_a,answers_b,questions_a,questions_b]:\n",
+    "    for i,text in enumerate(ls):\n",
+    "        ls[i] = text.lstrip().replace(\"  \",\" \").replace(\"   \",\"\")"
+   ],
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%%\n"
+    }
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 126,
+   "outputs": [],
+   "source": [
+    "#[ make question list and answer list\n",
+    "questions = []\n",
+    "answers = []\n",
+    "for a,b in zip(questions_a,questions_b):\n",
+    "    questions.append(a)\n",
+    "    questions.append(b)\n",
+    "for c,d in zip(answers_a,answers_b):\n",
+    "    answers.append(c)\n",
+    "    answers.append(d)"
+   ],
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%%\n"
+    }
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 139,
+   "outputs": [],
+   "source": [
+    "# build the first final version\n",
+    "dt_df = {\"id\":double_ids,\"french_schema_no\": double_french_schema_ids,\"question\":questions,\"correct_answer\":answers,\"text\":items}\n",
+    "df = pd.DataFrame(dt_df)\n",
+    "df.shape\n",
+    "df = df[[\"id\",\"text\",\"question\",\"correct_answer\",\"french_schema_no\"]]\n",
+    "#! still need\n",
+    "#? need what?"
+   ],
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%%\n"
+    }
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 140,
+   "outputs": [],
+   "source": [
+    "# xo_write_json(data_dir+\"winofr_final.json\",df)\n",
+    "\n",
+    "# *  2021-03-10 restart from here please\n",
+    "xo_read_json()"
+   ],
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%%\n"
+    }
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 121,
+   "outputs": [],
+   "source": [
+    "#* make options -> no need since we got incorrect answers list\n",
+    "# options = [f\"{x}|{y}\" for x,y in zip(answers_a,answers_b)]\n",
+    "# options_doubled = []\n",
+    "# for op in options:\n",
+    "#     options_doubled.append(op)\n",
+    "#     options_doubled.append(op)\n",
+    "# len(options_doubled)"
+   ],
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%%\n"
+    }
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "#* make no_context"
+   ],
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%%\n"
+    }
+   }
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "name": "myenv",
+   "language": "python",
+   "display_name": "Python (myenv)"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 2
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython2",
+   "version": "2.7.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 0
+}

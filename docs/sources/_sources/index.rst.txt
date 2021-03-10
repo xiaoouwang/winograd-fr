@@ -17,7 +17,13 @@ Welcome to Wino-fr's documentation page
 
    Paper published at `TALN` by `Olga Seminck, Vincent Segonne, Pascal Amsili`,  check `Modèles de langue appliqués aux schémas Winograd français (Language Models applied to French Winograd Schemas) <https://www.aclweb.org/anthology/2019.jeptalnrecital-court.20/>`_
 
-.. admonition:: Au fil de l'eau
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   xiaoou/index
+
+.. admonition:: Log Xiaoou Wang
 
     |check|  2021-03-01: Revise the original xml file to add english ids and identify the non wino items as `000` by *Xiaoou* -> `winograd_fr_v2.xml`
 
@@ -28,13 +34,6 @@ Welcome to Wino-fr's documentation page
     |check|  2021-03-10: Build the complete version from xml by *Xiaoou* -> winofr_final.json :doc:`xiaoou/03_french_finalfinal_json`
 
     |uncheck|  2021-03-10: Calculate pmi with scraper and compare with Bert no context
-
-
-.. toctree::
-   :maxdepth: 1
-   :glob:
-
-   xiaoou/index
 
 Données
 -------

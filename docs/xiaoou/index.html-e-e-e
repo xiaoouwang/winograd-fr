@@ -110,7 +110,7 @@
 <li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">Xiaoou Wang Internship Winograd</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="01_french_data_cleaning.html">1. French data cleaning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="02_french_final_json.html">2. Towards a full version of french wino (split schemas)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="03_french_finalfinal_json.html">3. Towards a full version of french wino (split schemas)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_french_finalfinal_json.html">3. Towards a full version of french wino (final steps)</a></li>
 </ul>
 </li>
 </ul>
@@ -139,7 +139,10 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="02_french_final_json.html">2. Towards a full version of french wino (split schemas)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_french_finalfinal_json.html">3. Towards a full version of french wino (split schemas)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_french_finalfinal_json.html">3. Towards a full version of french wino (final steps)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="03_french_finalfinal_json.html#Why">3.1. Why</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>

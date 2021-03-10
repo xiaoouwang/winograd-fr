@@ -109,7 +109,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="xiaoou/index.html">Xiaoou Wang Internship Winograd</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="xiaoou/01_french_data_cleaning.html">1. French data cleaning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="xiaoou/02_french_final_json.html">2. Towards a full version of french wino (split schemas)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/03_french_finalfinal_json.html">3. Towards a full version of french wino (split schemas)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xiaoou/03_french_finalfinal_json.html">3. Towards a full version of french wino (final steps)</a></li>
 </ul>
 </li>
 </ul>

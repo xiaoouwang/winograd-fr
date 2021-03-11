@@ -113,7 +113,7 @@
 <p class="caption"><span class="caption-text">Interns</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="xiaoou/index.html">Xiaoou Wang Internship Winograd (2021/02/01 - 2021/07/31)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="emma_template/index.html">Emma Dubois 2020/04/06</a></li>
+<li class="toctree-l1"><a class="reference internal" href="emma_template/index.html">Emma Dubois 2020/04/06 - 2020/04/15</a></li>
 </ul>
 
 </div>
@@ -191,7 +191,7 @@
 <p class="caption"><span class="caption-text">Interns</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="xiaoou/index.html">Xiaoou Wang Internship Winograd (2021/02/01 - 2021/07/31)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="emma_template/index.html">Emma Dubois 2020/04/06</a></li>
+<li class="toctree-l1"><a class="reference internal" href="emma_template/index.html">Emma Dubois 2020/04/06 - 2020/04/15</a></li>
 </ul>
 </div>
 <p>Cette section documente la contribution de Xiaoou Wang au projet Wino-fr.</p>
@@ -204,10 +204,10 @@
 <p><input type="checkbox"/>  2021-03-10: Calculate pmi with scraper and compare with Bert no context</p>
 </div>
 <p>Cette section documente la contribution d’Emma Dubois au projet Wino-fr.</p>
-<div class="admonition-log-emma-dubois-2020-04-06 admonition">
-<p class="admonition-title">Log Emma Dubois 2020/04/06</p>
-<p><input checked="" type="checkbox"/> Copie des nouveaux items Winograd_FR_NewItems.src dans Winograd_FR.src2</p>
-<p><input checked="" type="checkbox"/> Vérification forme et orthographe des items</p>
+<div class="admonition-log-emma-dubois-2020-04-06-2020-04-15 admonition">
+<p class="admonition-title">Log Emma Dubois 2020/04/06 - 2020/04/15</p>
+<p><input checked="" type="checkbox"/> 2020/04/06 : Copie des nouveaux items Winograd_FR_NewItems.src dans Winograd_FR.src2</p>
+<p><input checked="" type="checkbox"/> 2020/04/10 : Vérification forme et orthographe des items</p>
 </div>
 </div>
 </div>

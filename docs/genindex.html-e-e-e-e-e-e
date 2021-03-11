@@ -4,9 +4,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="#" /><link rel="search" title="Recherche" href="search.html" />
 
     <meta name="generator" content="sphinx-3.5.1, furo 2021.02.28.beta28"/><title>Index - Documentation Winograd-fr</title>
-<link rel="stylesheet" href="_static/styles/furo.css">
-    <link rel="stylesheet" href="_static/pygments.css">
-    <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="_static/pygments_dark.css">
+<link rel="stylesheet" href="static/styles/furo.css">
+    <link rel="stylesheet" href="static/pygments.css">
+    <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="static/pygments_dark.css">
     
 
 
@@ -35,7 +35,7 @@
   --color-code-foreground: #d0d0d0;
   
   }
-</style><link rel="stylesheet" href="_static/styles/furo-extensions.css"></head>
+</style><link rel="stylesheet" href="static/styles/furo-extensions.css"></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -105,13 +105,14 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-scroll"><div class="sidebar-tree">
-  <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="xiaoou/index.html">Xiaoou Wang Internship Winograd (2021/02/01 - 2021/07/31)</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/01_french_data_cleaning.html">1. French data cleaning</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/02_french_final_json.html">2. Towards a full version of french wino (split schemas)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/03_french_finalfinal_json.html">3. Towards a full version of french wino (final steps)</a></li>
+  <p class="caption"><span class="caption-text">Data generated during our project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data_template/index.html">Csv, json and xml</a></li>
 </ul>
-</li>
+<p class="caption"><span class="caption-text">Our interns</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="xiaoou/index.html">Xiaoou Wang Internship Winograd (2021/02/01 - 2021/07/31)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="emma_template/index.html">Emma Dubois 2020/04/06</a></li>
 </ul>
 
 </div>
@@ -160,11 +161,11 @@
     </aside>
   </main>
 </div>
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/translations.js"></script>
+    <script id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+    <script src="static/jquery.js"></script>
+    <script src="static/underscore.js"></script>
+    <script src="static/doctools.js"></script>
+    <script src="static/translations.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="_static/scripts/main.js"></script></body>
+    <script src="static/scripts/main.js"></script></body>
 </html>

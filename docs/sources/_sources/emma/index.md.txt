@@ -1,0 +1,7 @@
+# Emma Dubois
+
+## 04/06
+
+* Copie des nouveaux items Winograd_FR_NewItems.src dans Winograd_FR.src2
+
+* Vérification forme et orthographe des items

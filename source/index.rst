@@ -12,18 +12,37 @@ Welcome to Wino-fr's documentation page
 
     <input type="checkbox">
 
-.. important::
-   Paper published at `CORBON 2017` by `Pascal Amsili, Olga Seminck`,  check `A Google-Proof Collection of French Winograd Schemas <https://www.aclweb.org/anthology/W17-1504/>`_
+News
+----
 
-   Paper published at `TALN` by `Olga Seminck, Vincent Segonne, Pascal Amsili`,  check `Modèles de langue appliqués aux schémas Winograd français (Language Models applied to French Winograd Schemas) <https://www.aclweb.org/anthology/2019.jeptalnrecital-court.20/>`_
+.. include:: news/index.rst
+   :start-line: 3
+
+Data
+----
+.. toctree::
+   :caption: Data generated during our project
+   :glob:
+
+   data_template/index
+
+.. include:: data_template/index.rst
+   :start-line: 3
+
+Our interns
+------------------
 
 .. toctree::
-   :maxdepth: -1
+   :maxdepth: 1
+   :caption: Our interns
    :glob:
 
    xiaoou/index
+   emma_template/index
 
-.. admonition:: Log Xiaoou Wang
+Cette section documente la contribution de Xiaoou Wang au projet Wino-fr.
+
+.. admonition:: Log Xiaoou Wang (2021/02/01 - 2021/07/31)
 
     |check|  2021-03-01: Revise the original xml file to add english ids and identify the non wino items as `000` by *Xiaoou* -> `winograd_fr_v2.xml`
 
@@ -35,33 +54,5 @@ Welcome to Wino-fr's documentation page
 
     |uncheck|  2021-03-10: Calculate pmi with scraper and compare with Bert no context
 
-Données
--------
-
-.. list-table:: Data Overview
-   :widths: 15 10 10 30
-   :header-rows: 1
-
-   * - name
-     - directory
-     - language
-     - info
-   * - pmi_frwac.csv
-     - data/french
-     - fr
-     - original pmi data from olga/pascal
-   * - pmi_frwac_alt_corrected.json
-     - data/french
-     - fr
-     - question/answer pairs for new pmi calculation frTenten
-   * - winograd_fr_v2.xml
-     - data/french
-     - fr
-     - original french winograd xml file with english ids revised
-   * - wino285.json
-     - data/english
-     - en
-     - 285 english wino items
-
-
-
+.. include:: emma_template/index.rst
+   :start-line: 3

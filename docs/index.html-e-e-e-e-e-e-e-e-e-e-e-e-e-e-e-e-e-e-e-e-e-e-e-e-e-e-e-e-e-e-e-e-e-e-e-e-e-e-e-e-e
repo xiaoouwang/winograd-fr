@@ -1,10 +1,10 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Recherche" href="search.html" /><link rel="next" title="Xiaoou Wang stage Winograd" href="xiaoou/index.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Recherche" href="search.html" /><link rel="next" title="Xiaoou Wang Internship Winograd (2021/02/01 - 2021/07/31)" href="xiaoou/index.html" />
 
     <meta name="generator" content="sphinx-3.5.1, furo 2021.02.28.beta28"/>
-        <title>Home - Documentation winograd-fr</title>
+        <title>Home - Documentation Winograd-fr</title>
       <link rel="stylesheet" href="static/styles/furo.css">
     <link rel="stylesheet" href="static/pygments.css">
     <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="static/pygments_dark.css">
@@ -85,7 +85,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="#"><div class="brand">Documentation winograd-fr </div></a>
+      <a href="#"><div class="brand">Documentation Winograd-fr </div></a>
     </div>
     <div class="header-right">
       <label class="toc-overlay-icon toc-header-icon" for="__toc">
@@ -99,7 +99,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="#">
   
   
-  <span class="sidebar-brand-text">Documentation winograd-fr </span>
+  <span class="sidebar-brand-text">Documentation Winograd-fr </span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html">
   <input class="sidebar-search" placeholder=Recherche name="q">
@@ -107,10 +107,15 @@
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="xiaoou/index.html">Xiaoou Wang stage Winograd</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="xiaoou/index.html">Xiaoou Wang Internship Winograd (2021/02/01 - 2021/07/31)</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="xiaoou/01_french_data_cleaning.html">1. French data cleaning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xiaoou/02_french_final_json.html">2. Towards a full version of french wino (split schemas)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xiaoou/03_french_finalfinal_json.html">3. Towards a full version of french wino (final steps)</a></li>
 </ul>
 </li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="emma_template/index.html">Emma Dubois</a></li>
 </ul>
 
 </div>
@@ -125,19 +130,34 @@
         <label class="toc-overlay-icon toc-content-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <div class="section" id="welcome-to-wino-fr-s-documentation">
-<h1>Welcome to wino-fr’s documentation!<a class="headerlink" href="#welcome-to-wino-fr-s-documentation" title="Lien permanent vers ce titre">¶</a></h1>
-<div class="section" id="vers-une-documentation-automatique-et-structuree-a-base-de-jupyter-notebooks">
-<h2>Vers une documentation automatique et structurée à base de jupyter notebooks<a class="headerlink" href="#vers-une-documentation-automatique-et-structuree-a-base-de-jupyter-notebooks" title="Lien permanent vers ce titre">¶</a></h2>
-<div class="admonition-actualites-au-fil-de-l-eau admonition">
-<p class="admonition-title">Actualités au fil de l’eau…</p>
-<p><input checked="" type="checkbox"/>  2021-03-01: Revise the original xml file to add english ids and identify the non wino items as 000 by <em>Xiaoou</em> -&gt; <cite>winograd_fr_v2.xml</cite></p>
+        <div class="section" id="welcome-to-wino-fr-s-documentation-page">
+<h1>Welcome to Wino-fr’s documentation page<a class="headerlink" href="#welcome-to-wino-fr-s-documentation-page" title="Lien permanent vers ce titre">¶</a></h1>
+<p><a class="reference external" href="http://commonsensereasoning.org/winograd.html">Winograd Schema Challenge in French</a> by researchers at <a class="reference external" href="https://www.lattice.cnrs.fr/">Lattice</a> and <a class="reference external" href="http://www.llf.cnrs.fr/fr/winograd-fr">Laboratoire de Linguistique Formelle</a>.</p>
+<div class="important admonition">
+<p class="admonition-title">Breaking news</p>
+<p>Paper published at <cite>CORBON 2017</cite> by <cite>Pascal Amsili, Olga Seminck</cite>,  check <a class="reference external" href="https://www.aclweb.org/anthology/W17-1504/">A Google-Proof Collection of French Winograd Schemas</a></p>
+<p>Paper published at <cite>TALN 2019</cite> by <cite>Olga Seminck, Vincent Segonne, Pascal Amsili</cite>,  check <a class="reference external" href="https://www.aclweb.org/anthology/2019.jeptalnrecital-court.20/">Modèles de langue appliqués aux schémas Winograd français (Language Models applied to French Winograd Schemas)</a></p>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="xiaoou/index.html">Xiaoou Wang Internship Winograd (2021/02/01 - 2021/07/31)</a></li>
+</ul>
+</div>
+<div class="admonition-log-xiaoou-wang admonition">
+<p class="admonition-title">Log Xiaoou Wang</p>
+<p><input checked="" type="checkbox"/>  2021-03-01: Revise the original xml file to add english ids and identify the non wino items as <cite>000</cite> by <em>Xiaoou</em> -&gt; <cite>winograd_fr_v2.xml</cite></p>
 <p><input checked="" type="checkbox"/>  2021-03-08: Clean pmi data to get question answer pairs by <em>Xiaoou</em> -&gt; <cite>pmi_frwac_alt_corrected.json</cite> <a class="reference internal" href="xiaoou/01_french_data_cleaning.html"><span class="doc">French data cleaning</span></a></p>
-<p><input checked="" type="checkbox"/>  2021-03-09: Get a french-english linking version and using items instead of schemas by <em>Xiaoou</em></p>
-<p><input type="checkbox"/>  2021-03-10: Get a french-english linking version and using items instead of schemas by Xiaoou</p>
+<p><input checked="" type="checkbox"/>  2021-03-10: Get a french-english linking version and using items instead of schemas by <em>Xiaoou</em> -&gt; <cite>pmi_frwac_withid.json</cite> <a class="reference internal" href="xiaoou/02_french_final_json.html"><span class="doc">Towards a full version of french wino (split schemas)</span></a></p>
+<p><input checked="" type="checkbox"/>  2021-03-10: Build the complete version from xml by <em>Xiaoou</em> -&gt; winofr_final.json <a class="reference internal" href="xiaoou/03_french_finalfinal_json.html"><span class="doc">Towards a full version of french wino (final steps)</span></a></p>
+<p><input type="checkbox"/>  2021-03-10: Calculate pmi with scraper and compare with Bert no context</p>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="emma_template/index.html">Emma Dubois</a></li>
+</ul>
 </div>
 <div class="section" id="donnees">
-<h3>Données<a class="headerlink" href="#donnees" title="Lien permanent vers ce titre">¶</a></h3>
+<h2>Données<a class="headerlink" href="#donnees" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="table-wrapper"><table class="colwidths-given docutils align-default" id="id1">
 <caption><span class="caption-text">Data Overview</span><a class="headerlink" href="#id1" title="Lien permanent vers ce tableau">¶</a></caption>
 <colgroup>
@@ -155,36 +175,27 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p>pmi_frwac.csv</p></td>
-<td><p>frenchdata</p></td>
+<td><p>data/french</p></td>
 <td><p>fr</p></td>
 <td><p>original pmi data from olga/pascal</p></td>
 </tr>
 <tr class="row-odd"><td><p>pmi_frwac_alt_corrected.json</p></td>
-<td><p>frenchdata</p></td>
+<td><p>data/french</p></td>
 <td><p>fr</p></td>
 <td><p>question/answer pairs for new pmi calculation frTenten</p></td>
 </tr>
 <tr class="row-even"><td><p>winograd_fr_v2.xml</p></td>
-<td><p>frenchdata</p></td>
+<td><p>data/french</p></td>
 <td><p>fr</p></td>
 <td><p>original french winograd xml file with english ids revised</p></td>
 </tr>
 <tr class="row-odd"><td><p>wino285.json</p></td>
-<td><p>englishdata</p></td>
+<td><p>data/english</p></td>
 <td><p>en</p></td>
 <td><p>285 english wino items</p></td>
 </tr>
 </tbody>
 </table></div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="xiaoou/index.html">Xiaoou Wang stage Winograd</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="xiaoou/01_french_data_cleaning.html">1. French data cleaning</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
 </div>
 </div>
 
@@ -197,7 +208,7 @@
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Xiaoou Wang stage Winograd</div>
+                <div class="title">Xiaoou Wang Internship Winograd (2021/02/01 - 2021/07/31)</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -205,14 +216,14 @@
         </div>
 
         <div class="related-information">
-              Copyright &#169; 2021, lattice
+              Copyright &#169; 2021, Lattice
             |
             Built with <a href="https://www.sphinx-doc.org/">Sphinx</a>
               and
               <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
               <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
             |
-            <a class="muted-link" href="_sources/index.rst.txt"
+            <a class="muted-link" href="sources/index.rst.txt"
                rel="nofollow">
               Montrer le code source
             </a>
@@ -232,11 +243,8 @@
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Welcome to wino-fr’s documentation!</a><ul>
-<li><a class="reference internal" href="#vers-une-documentation-automatique-et-structuree-a-base-de-jupyter-notebooks">Vers une documentation automatique et structurée à base de jupyter notebooks</a><ul>
+<li><a class="reference internal" href="#">Welcome to Wino-fr’s documentation page</a><ul>
 <li><a class="reference internal" href="#donnees">Données</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>

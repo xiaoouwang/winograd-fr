@@ -11,7 +11,8 @@ Cette section documente la contribution de Xiaoou Wang au projet Wino-fr.
 
     <input type="checkbox">
 
-.. admonition:: Au fil de l'eau
+
+.. admonition:: Log Xiaoou Wang (2021/02/01 - 2021/07/31)
 
     |check|  2021-03-01: Revise the original xml file to add english ids and identify the non wino items as `000` by *Xiaoou* -> `winograd_fr_v2.xml`
 
@@ -23,11 +24,6 @@ Cette section documente la contribution de Xiaoou Wang au projet Wino-fr.
 
     |uncheck|  2021-03-10: Calculate pmi with scraper and compare with Bert no context
 
-.. toctree::
-    :maxdepth: 2
-    :numbered: 2
-    :glob:
 
-    0*
 ..    01_french_data_cleaning.ipynb
 ..    02_french_final_json.ipynb

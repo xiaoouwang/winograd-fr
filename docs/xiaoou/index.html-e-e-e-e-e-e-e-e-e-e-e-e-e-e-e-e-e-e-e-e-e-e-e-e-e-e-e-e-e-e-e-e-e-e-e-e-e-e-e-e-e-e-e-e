@@ -1,10 +1,10 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Recherche" href="../search.html" /><link rel="next" title="1. French data cleaning" href="01_french_data_cleaning.html" /><link rel="prev" title="Welcome to wino-fr’s documentation!" href="../index.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Recherche" href="../search.html" /><link rel="next" title="1. French data cleaning" href="01_french_data_cleaning.html" /><link rel="prev" title="Welcome to Wino-fr’s documentation page" href="../index.html" />
 
     <meta name="generator" content="sphinx-3.5.1, furo 2021.02.28.beta28"/>
-        <title>Xiaoou Wang stage Winograd - Documentation winograd-fr</title>
+        <title>Xiaoou Wang Internship Winograd (2021/02/01 - 2021/07/31) - Documentation Winograd-fr</title>
       <link rel="stylesheet" href="../static/styles/furo.css">
     <link rel="stylesheet" href="../static/pygments.css">
     <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="../static/pygments_dark.css">
@@ -85,7 +85,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../index.html"><div class="brand">Documentation winograd-fr </div></a>
+      <a href="../index.html"><div class="brand">Documentation Winograd-fr </div></a>
     </div>
     <div class="header-right">
       <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
@@ -99,7 +99,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
   
   
-  <span class="sidebar-brand-text">Documentation winograd-fr </span>
+  <span class="sidebar-brand-text">Documentation Winograd-fr </span>
   
 </a><form class="sidebar-search-container" method="get" action="../search.html">
   <input class="sidebar-search" placeholder=Recherche name="q">
@@ -107,8 +107,10 @@
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul class="current">
-<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">Xiaoou Wang stage Winograd</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">Xiaoou Wang Internship Winograd (2021/02/01 - 2021/07/31)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="01_french_data_cleaning.html">1. French data cleaning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_french_final_json.html">2. Towards a full version of french wino (split schemas)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_french_finalfinal_json.html">3. Towards a full version of french wino (final steps)</a></li>
 </ul>
 </li>
 </ul>
@@ -125,14 +127,28 @@
         <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <div class="section" id="xiaoou-wang-stage-winograd">
-<h1>Xiaoou Wang stage Winograd<a class="headerlink" href="#xiaoou-wang-stage-winograd" title="Lien permanent vers ce titre">¶</a></h1>
-<p>Cette section documente la contribution de Xiaoou Wang au projet wino-fr.</p>
+        <div class="section" id="xiaoou-wang-internship-winograd-2021-02-01-2021-07-31">
+<h1>Xiaoou Wang Internship Winograd (2021/02/01 - 2021/07/31)<a class="headerlink" href="#xiaoou-wang-internship-winograd-2021-02-01-2021-07-31" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Cette section documente la contribution de Xiaoou Wang au projet Wino-fr.</p>
+<div class="admonition-au-fil-de-l-eau admonition">
+<p class="admonition-title">Au fil de l’eau</p>
+<p><input checked="" type="checkbox"/>  2021-03-01: Revise the original xml file to add english ids and identify the non wino items as <cite>000</cite> by <em>Xiaoou</em> -&gt; <cite>winograd_fr_v2.xml</cite></p>
+<p><input checked="" type="checkbox"/>  2021-03-08: Clean pmi data to get question answer pairs by <em>Xiaoou</em> -&gt; <cite>pmi_frwac_alt_corrected.json</cite> <a class="reference internal" href="01_french_data_cleaning.html"><span class="doc">French data cleaning</span></a></p>
+<p><input checked="" type="checkbox"/>  2021-03-10: Get a french-english linking version and using items instead of schemas by <em>Xiaoou</em> -&gt; <cite>pmi_frwac_withid.json</cite> <a class="reference internal" href="02_french_final_json.html"><span class="doc">Towards a full version of french wino (split schemas)</span></a></p>
+<p><input checked="" type="checkbox"/>  2021-03-10: Build the complete version from xml by <em>Xiaoou</em> -&gt; winofr_final.json <a class="reference internal" href="03_french_finalfinal_json.html"><span class="doc">Towards a full version of french wino (final steps)</span></a></p>
+<p><input type="checkbox"/>  2021-03-10: Calculate pmi with scraper and compare with Bert no context</p>
+</div>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="01_french_data_cleaning.html">1. French data cleaning</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="01_french_data_cleaning.html#Previously-by-Olga-et-Pascal">1.1. Previously by Olga et Pascal</a></li>
 <li class="toctree-l2"><a class="reference internal" href="01_french_data_cleaning.html#Manual-correction">1.2. Manual correction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_french_data_cleaning.html#Add-the-alt-information-to-the-json-as-pmi_able">1.3. Add the alt information to the json as <code class="docutils literal notranslate"><span class="pre">pmi_able</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02_french_final_json.html">2. Towards a full version of french wino (split schemas)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_french_finalfinal_json.html">3. Towards a full version of french wino (final steps)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="03_french_finalfinal_json.html#Why">3.1. Why</a></li>
 </ul>
 </li>
 </ul>
@@ -166,14 +182,14 @@
         </div>
 
         <div class="related-information">
-              Copyright &#169; 2021, lattice
+              Copyright &#169; 2021, Lattice
             |
             Built with <a href="https://www.sphinx-doc.org/">Sphinx</a>
               and
               <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
               <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
             |
-            <a class="muted-link" href="../_sources/xiaoou/index.rst.txt"
+            <a class="muted-link" href="../sources/xiaoou/index.rst.txt"
                rel="nofollow">
               Montrer le code source
             </a>

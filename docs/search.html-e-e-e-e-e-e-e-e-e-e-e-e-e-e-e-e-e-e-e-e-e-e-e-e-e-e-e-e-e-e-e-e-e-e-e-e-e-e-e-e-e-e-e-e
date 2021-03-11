@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Recherche" href="#" />
 
-    <meta name="generator" content="sphinx-3.5.1, furo 2021.02.28.beta28"/><title>Recherche - Documentation winograd-fr </title><link rel="stylesheet" href="static/styles/furo.css">
+    <meta name="generator" content="sphinx-3.5.1, furo 2021.02.28.beta28"/><title>Recherche - Documentation Winograd-fr </title><link rel="stylesheet" href="static/styles/furo.css">
     <link rel="stylesheet" href="static/pygments.css">
     <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="static/pygments_dark.css">
     
@@ -83,7 +83,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">Documentation winograd-fr </div></a>
+      <a href="index.html"><div class="brand">Documentation Winograd-fr </div></a>
     </div>
     <div class="header-right">
       <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
@@ -97,7 +97,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
   
-  <span class="sidebar-brand-text">Documentation winograd-fr </span>
+  <span class="sidebar-brand-text">Documentation Winograd-fr </span>
   
 </a><form class="sidebar-search-container" method="get" action="#">
   <input class="sidebar-search" placeholder=Recherche name="q">
@@ -105,10 +105,15 @@
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="xiaoou/index.html">Xiaoou Wang stage Winograd</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="xiaoou/index.html">Xiaoou Wang Internship Winograd (2021/02/01 - 2021/07/31)</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="xiaoou/01_french_data_cleaning.html">1. French data cleaning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xiaoou/02_french_final_json.html">2. Towards a full version of french wino (split schemas)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xiaoou/03_french_finalfinal_json.html">3. Towards a full version of french wino (final steps)</a></li>
 </ul>
 </li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="emma_template/index.html">Emma Dubois</a></li>
 </ul>
 
 </div>
@@ -143,7 +148,7 @@
         </div>
 
         <div class="related-information">
-              Copyright &#169; 2021, lattice
+              Copyright &#169; 2021, Lattice
             |
             Built with <a href="https://www.sphinx-doc.org/">Sphinx</a>
               and

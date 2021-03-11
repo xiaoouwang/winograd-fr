@@ -29,12 +29,12 @@ Data
 .. include:: data_template/index.rst
    :start-line: 3
 
-Our interns
+Interns
 ------------------
 
 .. toctree::
    :maxdepth: 1
-   :caption: Our interns
+   :caption: Interns
    :glob:
 
    xiaoou/index

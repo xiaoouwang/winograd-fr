@@ -110,7 +110,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="data_template/index.html">Csv, json and xml</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Our interns</span></p>
+<p class="caption"><span class="caption-text">Interns</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="xiaoou/index.html">Xiaoou Wang Internship Winograd (2021/02/01 - 2021/07/31)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="emma_template/index.html">Emma Dubois 2020/04/06</a></li>
@@ -185,10 +185,10 @@
 </tbody>
 </table></div>
 </div>
-<div class="section" id="our-interns">
-<h2>Our interns<a class="headerlink" href="#our-interns" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="interns">
+<h2>Interns<a class="headerlink" href="#interns" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Our interns</span></p>
+<p class="caption"><span class="caption-text">Interns</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="xiaoou/index.html">Xiaoou Wang Internship Winograd (2021/02/01 - 2021/07/31)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="emma_template/index.html">Emma Dubois 2020/04/06</a></li>
@@ -259,7 +259,7 @@
 <li><a class="reference internal" href="#">Welcome to Wino-fr’s documentation page</a><ul>
 <li><a class="reference internal" href="#news">News</a></li>
 <li><a class="reference internal" href="#data">Data</a></li>
-<li><a class="reference internal" href="#our-interns">Our interns</a></li>
+<li><a class="reference internal" href="#interns">Interns</a></li>
 </ul>
 </li>
 </ul>

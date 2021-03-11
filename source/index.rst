@@ -4,6 +4,8 @@ Welcome to Wino-fr's documentation page
 
 `Winograd Schema Challenge in French <http://commonsensereasoning.org/winograd.html>`_ by researchers at `Lattice <https://www.lattice.cnrs.fr/>`_ and `Laboratoire de Linguistique Formelle <http://www.llf.cnrs.fr/fr/winograd-fr>`_.
 
+Want to join us? Check our `Github readme <https://github.com/xiaoouwang/winograd-fr>`_!
+
 .. |check| raw:: html
 
     <input checked=""  type="checkbox">

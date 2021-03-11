@@ -131,6 +131,7 @@
         <div class="section" id="welcome-to-wino-fr-s-documentation-page">
 <h1>Welcome to Wino-fr’s documentation page<a class="headerlink" href="#welcome-to-wino-fr-s-documentation-page" title="Lien permanent vers ce titre">¶</a></h1>
 <p><a class="reference external" href="http://commonsensereasoning.org/winograd.html">Winograd Schema Challenge in French</a> by researchers at <a class="reference external" href="https://www.lattice.cnrs.fr/">Lattice</a> and <a class="reference external" href="http://www.llf.cnrs.fr/fr/winograd-fr">Laboratoire de Linguistique Formelle</a>.</p>
+<p>Want to join us? Check our <a class="reference external" href="https://github.com/xiaoouwang/winograd-fr">Github readme</a>!</p>
 <div class="section" id="news">
 <h2>News<a class="headerlink" href="#news" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="important admonition">

@@ -17,4 +17,6 @@ Cette section documente la contribution d'Emma Dubois au projet Wino-fr.
 
     |check| 2020/04/06 : Copie des nouveaux items Winograd_FR_NewItems.src dans Winograd_FR.src2
 
-    |check| 2020/04/10 : Vérification forme et orthographe des items
+    |check| 2020/04/10 : Vérification forme et orthographe des items..
+
+    |uncheck| 2020/04/10 : Something to do...

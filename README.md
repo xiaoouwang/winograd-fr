@@ -1,4 +1,4 @@
-## Wino related documentation
+## Winograd related documentation
 
 [Homepage](https://winograd-fr.readthedocs.io/en/latest/index.html)
 

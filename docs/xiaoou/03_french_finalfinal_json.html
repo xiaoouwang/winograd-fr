@@ -1,13 +1,13 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Recherche" href="../search.html" /><link rel="next" title="Emma Dubois 2020/04/06" href="../emma_template/index.html" /><link rel="prev" title="2. Towards a full version of french wino (split schemas)" href="02_french_final_json.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Recherche" href="../search.html" />
 
     <meta name="generator" content="sphinx-3.5.1, furo 2021.02.28.beta28"/>
-        <title>3. Towards a full version of french wino (final steps) - Documentation Winograd-fr</title>
-      <link rel="stylesheet" href="../static/styles/furo.css">
-    <link rel="stylesheet" href="../static/pygments.css">
-    <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="../static/pygments_dark.css">
+        <title>Towards a full version of french wino (final steps) - Documentation Winograd-fr</title>
+      <link rel="stylesheet" href="../_static/styles/furo.css">
+    <link rel="stylesheet" href="../_static/pygments.css">
+    <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="../_static/pygments_dark.css">
     
 
 
@@ -36,7 +36,7 @@
   --color-code-foreground: #d0d0d0;
   
   }
-</style><link rel="stylesheet" href="../static/styles/furo-extensions.css"></head>
+</style><link rel="stylesheet" href="../_static/styles/furo-extensions.css"></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -110,15 +110,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../data_template/index.html">Csv, json and xml</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Our interns</span></p>
-<ul class="current">
-<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Xiaoou Wang Internship Winograd (2021/02/01 - 2021/07/31)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="01_french_data_cleaning.html">1. French data cleaning</a></li>
-<li class="toctree-l2"><a class="reference internal" href="02_french_final_json.html">2. Towards a full version of french wino (split schemas)</a></li>
-<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">3. Towards a full version of french wino (final steps)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../emma_template/index.html">Emma Dubois 2020/04/06</a></li>
+<p class="caption"><span class="caption-text">Interns</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Xiaoou Wang Internship Winograd (2021/02/01 - 2021/07/31)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../emma_template/index.html">Emma Dubois 2020/04/06 - 2020/04/15</a></li>
 </ul>
 
 </div>
@@ -382,15 +377,15 @@ div.rendered_html tbody tr:hover {
 }
 </style>
 <div class="section" id="Towards-a-full-version-of-french-wino-(final-steps)">
-<h1><span class="section-number">3. </span>Towards a full version of french wino (final steps)<a class="headerlink" href="#Towards-a-full-version-of-french-wino-(final-steps)" title="Lien permanent vers ce titre">¶</a></h1>
+<h1>Towards a full version of french wino (final steps)<a class="headerlink" href="#Towards-a-full-version-of-french-wino-(final-steps)" title="Lien permanent vers ce titre">¶</a></h1>
 <div class="section" id="Why">
-<h2><span class="section-number">3.1. </span>Why<a class="headerlink" href="#Why" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>Why<a class="headerlink" href="#Why" title="Lien permanent vers ce titre">¶</a></h2>
 <p>To make data really comprehensible.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[134]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[95]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span><span class="nn">sys</span><span class="o">,</span><span class="nn">inspect</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -402,55 +397,34 @@ div.rendered_html tbody tr:hover {
 <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">'display.max_colwidth'</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 <span class="c1"># set data directory</span>
 <span class="n">data_dir</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"../../../data/french/"</span>
-
 <span class="kn">import</span> <span class="nn">xml.etree.ElementTree</span> <span class="k">as</span> <span class="nn">ET</span>
 <span class="kn">import</span> <span class="nn">re</span>
 </pre></div>
 </div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[96]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="n">tree</span> <span class="o">=</span> <span class="n">ET</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">data_dir</span> <span class="o">+</span> <span class="s1">'winograd_fr_v2.xml'</span><span class="p">)</span>
 <span class="n">root</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">getroot</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[73]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1">#* get id and schema for no 000 items</span>
+
+<span class="c1">#* get id and schema for no 9999 items</span>
 <span class="n">ids</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">french_schema_ids</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">schema</span> <span class="ow">in</span> <span class="n">root</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s2">"./"</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">schema</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s1">'engn'</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">"00000"</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">schema</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s1">'engn'</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">"9999"</span><span class="p">:</span>
         <span class="n">ids</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">schema</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s1">'engn'</span><span class="p">]))</span>
         <span class="n">french_schema_ids</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">schema</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s1">'id'</span><span class="p">]))</span>
 </pre></div>
 </div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[74]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[97]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1">#* check if each id is odd, it's ok because not every schema nb is even</span>
-
-<span class="c1"># for id in ids:</span>
-<span class="c1">#     if id%2 == 0:</span>
-<span class="c1">#         print(id)</span>
-</pre></div>
-</div>
-</div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[91]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="c1">#* make ids and french schema ids twice longer</span>
 <span class="n">double_ids</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">double_french_schema_ids</span> <span class="o">=</span> <span class="p">[]</span>
@@ -460,26 +434,14 @@ div.rendered_html tbody tr:hover {
 <span class="k">for</span> <span class="n">fr</span> <span class="ow">in</span> <span class="n">french_schema_ids</span><span class="p">:</span>
     <span class="n">double_french_schema_ids</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fr</span><span class="p">)</span>
     <span class="n">double_french_schema_ids</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fr</span><span class="p">)</span>
-<span class="n">len_double_ids</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">double_ids</span><span class="p">)</span>
-<span class="n">len_double_french_schema_ids</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">double_french_schema_ids</span><span class="p">)</span>
-<span class="k">assert</span> <span class="n">len_double_ids</span> <span class="o">==</span> <span class="n">len_double_french_schema_ids</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">len_double_ids</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-214
-</pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[76]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[98]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">double_ids</span><span class="p">)</span><span class="si">}</span><span class="s1"> items in french'</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -489,41 +451,40 @@ div.rendered_html tbody tr:hover {
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-214 items in french
+202 items in french
 </pre></div></div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[92]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[103]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="c1">#* add text and hypothesis: [texte] il mange trop -&gt; [hypothese] il mange pas peu</span>
+
 <span class="c1">#[ gather texts</span>
 <span class="n">items_a</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">items_b</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="k">for</span> <span class="n">schema</span> <span class="ow">in</span> <span class="n">root</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s2">"schema"</span><span class="p">):</span>
-    <span class="n">text_debut</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//txt1"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span>
-    <span class="n">text_middle</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//wordA"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
-    <span class="n">text_end</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//txt2"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
-    <span class="n">item_a</span> <span class="o">=</span> <span class="n">text_debut</span> <span class="o">+</span> <span class="n">text_middle</span> <span class="o">+</span> <span class="n">text_end</span>
-    <span class="n">text_debut</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//txt1"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span>
-    <span class="n">text_middle</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//wordB"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
-    <span class="n">text_end</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//txt2"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
-    <span class="n">item_b</span> <span class="o">=</span> <span class="n">text_debut</span> <span class="o">+</span> <span class="n">text_middle</span> <span class="o">+</span>  <span class="n">text_end</span>
-    <span class="n">items_a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item_a</span><span class="p">)</span>
-    <span class="n">items_b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item_b</span><span class="p">)</span>
-<span class="n">len_itemsa</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">items_a</span><span class="p">)</span>
-<span class="n">len_itemsb</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">items_b</span><span class="p">)</span>
-<span class="k">assert</span> <span class="n">len_double_ids</span> <span class="o">==</span> <span class="n">len_itemsa</span> <span class="o">+</span> <span class="n">len_itemsb</span>
+    <span class="k">if</span> <span class="n">schema</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s1">'engn'</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">"9999"</span><span class="p">:</span>
+        <span class="n">text_debut</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//txt1"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span>
+        <span class="n">text_middle</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//wordA"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+        <span class="n">text_end</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//txt2"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+        <span class="n">item_a</span> <span class="o">=</span> <span class="n">text_debut</span> <span class="o">+</span> <span class="n">text_middle</span> <span class="o">+</span> <span class="n">text_end</span>
+        <span class="n">text_debut</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//txt1"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span>
+        <span class="n">text_middle</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//wordB"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+        <span class="n">text_end</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//txt2"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+        <span class="n">item_b</span> <span class="o">=</span> <span class="n">text_debut</span> <span class="o">+</span> <span class="n">text_middle</span> <span class="o">+</span>  <span class="n">text_end</span>
+        <span class="n">items_a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item_a</span><span class="p">)</span>
+        <span class="n">items_b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item_b</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[129]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[104]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="n">items</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">items_a</span><span class="p">,</span><span class="n">items_b</span><span class="p">):</span>
     <span class="n">items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
@@ -532,42 +493,43 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[112]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[105]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="c1">#* add questions and answers, questiona should be followed by question b in the final list, the same for answers, the incorrect answer is the i in answerb or a</span>
 <span class="n">questions_a</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">questions_b</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">answers_a</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">answers_b</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">schema</span> <span class="ow">in</span> <span class="n">root</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s2">"schema"</span><span class="p">):</span>
-    <span class="n">text_debut</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//qn1"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
-    <span class="n">text_middle</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//qwordA"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
-    <span class="n">text_end</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//qn2"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
-    <span class="c1"># print(text_debut,text_middle,text_end)</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">text_middle</span><span class="p">:</span>
-        <span class="n">text_middle</span> <span class="o">=</span> <span class="s2">""</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">text_debut</span><span class="p">:</span>
-        <span class="n">text_debut</span> <span class="o">=</span> <span class="s2">""</span>
-    <span class="n">question_a</span> <span class="o">=</span> <span class="n">text_debut</span> <span class="o">+</span> <span class="n">text_middle</span> <span class="o">+</span> <span class="n">text_end</span>
-    <span class="n">text_debut</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//qn1"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
-    <span class="n">text_middle</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//qwordB"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
-    <span class="n">text_end</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//qn2"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">text_middle</span><span class="p">:</span>
-        <span class="n">text_middle</span> <span class="o">=</span> <span class="s2">""</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">text_debut</span><span class="p">:</span>
-        <span class="n">text_debut</span> <span class="o">=</span> <span class="s2">""</span>
-    <span class="n">question_b</span> <span class="o">=</span> <span class="n">text_debut</span> <span class="o">+</span> <span class="n">text_middle</span> <span class="o">+</span>  <span class="n">text_end</span>
-    <span class="c1"># print(text_debut,text_middle,text_end)</span>
-    <span class="n">answer_a</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//answer1"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
-    <span class="c1"># print(answer_a)</span>
-    <span class="n">answer_b</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//answer2"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
-    <span class="c1"># print(answer_b)</span>
-    <span class="n">questions_a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">question_a</span><span class="p">)</span>
-    <span class="n">questions_b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">question_b</span><span class="p">)</span>
-    <span class="n">answers_a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">answer_a</span><span class="p">)</span>
-    <span class="n">answers_b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">answer_b</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">schema</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s1">'engn'</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">"9999"</span><span class="p">:</span>
+        <span class="n">text_debut</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//qn1"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+        <span class="n">text_middle</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//qwordA"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+        <span class="n">text_end</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//qn2"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+        <span class="c1"># print(text_debut,text_middle,text_end)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">text_middle</span><span class="p">:</span>
+            <span class="n">text_middle</span> <span class="o">=</span> <span class="s2">""</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">text_debut</span><span class="p">:</span>
+            <span class="n">text_debut</span> <span class="o">=</span> <span class="s2">""</span>
+        <span class="n">question_a</span> <span class="o">=</span> <span class="n">text_debut</span> <span class="o">+</span> <span class="n">text_middle</span> <span class="o">+</span> <span class="n">text_end</span>
+        <span class="n">text_debut</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//qn1"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+        <span class="n">text_middle</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//qwordB"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+        <span class="n">text_end</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//qn2"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">text_middle</span><span class="p">:</span>
+            <span class="n">text_middle</span> <span class="o">=</span> <span class="s2">""</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">text_debut</span><span class="p">:</span>
+            <span class="n">text_debut</span> <span class="o">=</span> <span class="s2">""</span>
+        <span class="n">question_b</span> <span class="o">=</span> <span class="n">text_debut</span> <span class="o">+</span> <span class="n">text_middle</span> <span class="o">+</span>  <span class="n">text_end</span>
+        <span class="c1"># print(text_debut,text_middle,text_end)</span>
+        <span class="n">answer_a</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//answer1"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+        <span class="c1"># print(answer_a)</span>
+        <span class="n">answer_b</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//answer2"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+        <span class="c1"># print(answer_b)</span>
+        <span class="n">questions_a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">question_a</span><span class="p">)</span>
+        <span class="n">questions_b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">question_b</span><span class="p">)</span>
+        <span class="n">answers_a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">answer_a</span><span class="p">)</span>
+        <span class="n">answers_b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">answer_b</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">questions_a</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">questions_b</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">answers_a</span><span class="p">))</span>
@@ -576,7 +538,7 @@ div.rendered_html tbody tr:hover {
 <span class="c1"># clean the text</span>
 <span class="k">for</span> <span class="n">ls</span> <span class="ow">in</span> <span class="p">[</span><span class="n">answers_a</span><span class="p">,</span><span class="n">answers_b</span><span class="p">,</span><span class="n">questions_a</span><span class="p">,</span><span class="n">questions_b</span><span class="p">]:</span>
     <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">text</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">ls</span><span class="p">):</span>
-        <span class="n">ls</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"  "</span><span class="p">,</span><span class="s2">" "</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"   "</span><span class="p">,</span><span class="s2">""</span><span class="p">)</span>
+        <span class="n">ls</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"  "</span><span class="p">,</span><span class="s2">" "</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"   "</span><span class="p">,</span><span class="s2">""</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -585,17 +547,17 @@ div.rendered_html tbody tr:hover {
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-107
-107
-107
-107
+101
+101
+101
+101
 </pre></div></div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[126]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[106]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="c1">#[ make question list and answer list</span>
 <span class="n">questions</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">answers</span> <span class="o">=</span> <span class="p">[]</span>
@@ -609,54 +571,579 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[139]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[107]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># build the first final version</span>
-<span class="n">dt_df</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"id"</span><span class="p">:</span><span class="n">double_ids</span><span class="p">,</span><span class="s2">"french_schema_no"</span><span class="p">:</span> <span class="n">double_french_schema_ids</span><span class="p">,</span><span class="s2">"question"</span><span class="p">:</span><span class="n">questions</span><span class="p">,</span><span class="s2">"correct_answer"</span><span class="p">:</span><span class="n">answers</span><span class="p">,</span><span class="s2">"text"</span><span class="p">:</span><span class="n">items</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="ch">#! add the wrong answer</span>
+<span class="c1">#[ gather wrong answers</span>
+<span class="n">wrong_answers</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">answers_b</span><span class="p">,</span><span class="n">answers_a</span><span class="p">):</span>
+    <span class="n">wrong_answers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">wrong_answers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[108]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="ch">#! make hypothese and masked hypothese</span>
+<span class="c1">#[ hypothese</span>
+<span class="n">hypotheses</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">masked_hypotheses</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">schema</span> <span class="ow">in</span> <span class="n">root</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s2">"schema"</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">schema</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s1">'engn'</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">"9999"</span><span class="p">:</span>
+        <span class="n">text_debut</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//answer1"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span>
+        <span class="n">text_middle</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//qwordA"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">text_middle</span><span class="p">:</span>
+            <span class="n">text_middle</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//qn2"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="n">text_middle</span>
+        <span class="c1"># print(text_debut,text_middle)</span>
+        <span class="n">item_a</span> <span class="o">=</span> <span class="n">text_debut</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">text_middle</span>
+        <span class="n">item_a_masked</span> <span class="o">=</span> <span class="s2">"&lt;mask&gt;"</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">text_middle</span>
+        <span class="n">masked_hypotheses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item_a_masked</span><span class="p">)</span>
+        <span class="n">hypotheses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item_a</span><span class="p">)</span>
+        <span class="n">text_debut</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//answer2"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span>
+        <span class="n">text_middle</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">".//qwordB"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">text_middle</span><span class="p">:</span>
+            <span class="n">text_middle</span> <span class="o">=</span> <span class="n">temp</span>
+        <span class="c1"># print(text_debut,text_middle)</span>
+        <span class="n">item_a</span> <span class="o">=</span> <span class="n">text_debut</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">text_middle</span>
+        <span class="n">item_a_masked</span> <span class="o">=</span> <span class="s2">"&lt;mask&gt;"</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">text_middle</span>
+        <span class="n">masked_hypotheses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item_a_masked</span><span class="p">)</span>
+        <span class="n">hypotheses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item_a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hypotheses</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">masked_hypotheses</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">hypotheses</span><span class="p">,</span><span class="n">masked_hypotheses</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+202
+202
+la coupe grand
+&lt;mask&gt; grand
+la valise petit
+&lt;mask&gt; petit
+Paul n'a pas réussi
+&lt;mask&gt; n'a pas réussi
+Georges n'a pas répondu
+&lt;mask&gt; n'a pas répondu
+l'avocat répéter
+&lt;mask&gt; répéter
+le témoin répondre à
+&lt;mask&gt; répondre à
+Nicolas faible
+&lt;mask&gt; faible
+son fils lourd
+&lt;mask&gt; lourd
+les lycéens puni
+&lt;mask&gt; puni
+les collégiens défendu
+&lt;mask&gt; défendu
+la carafe vide
+&lt;mask&gt; vide
+la tasse plein
+&lt;mask&gt; plein
+Bernard généreux
+&lt;mask&gt; généreux
+Charles reconnaissant
+&lt;mask&gt; reconnaissant
+Bernard blessé
+&lt;mask&gt; blessé
+Charles ingrat
+&lt;mask&gt; ingrat
+l'escroc gagner
+&lt;mask&gt; gagner
+Samuel perdre
+&lt;mask&gt; perdre
+le poisson affamé
+&lt;mask&gt; affamé
+le ver délicieux
+&lt;mask&gt; délicieux
+l'arbre déplacer
+&lt;mask&gt; déplacer
+le toit réparer
+&lt;mask&gt; réparer
+son ancienne maison déménager de
+&lt;mask&gt; déménager de
+sa nouvelle maison emménager dans
+&lt;mask&gt; emménager dans
+les gens enthousiaste
+&lt;mask&gt; enthousiaste
+les livres de Paul populaire
+&lt;mask&gt; populaire
+Claire déçue
+&lt;mask&gt; déçue
+Sylvie sortie
+&lt;mask&gt; sortie
+Claire dehors
+&lt;mask&gt; dehors
+Sylvie à l'intérieur
+&lt;mask&gt; à l'intérieur
+Simon voulait
+&lt;mask&gt; voulait
+Adam savait
+&lt;mask&gt; savait
+le chemin emprunter
+&lt;mask&gt; emprunter
+le lac atteindre
+&lt;mask&gt; atteindre
+dans le lac plus sûr
+&lt;mask&gt; plus sûr
+dans la mer dangereux
+&lt;mask&gt; dangereux
+Fred et Alice préparés
+&lt;mask&gt; préparés
+les manteaux suffisants
+&lt;mask&gt; suffisants
+Dupont sur la route
+&lt;mask&gt; sur la route
+Dubois mort
+&lt;mask&gt; mort
+Henry tard
+&lt;mask&gt; tard
+Arnault tôt
+&lt;mask&gt; tôt
+la planche épais
+&lt;mask&gt; épais
+la scie petit
+&lt;mask&gt; petit
+les renards tuer
+&lt;mask&gt; tuer
+les poules protéger
+&lt;mask&gt; protéger
+Fred s'est levé
+&lt;mask&gt; s'est levé
+Georges est revenu
+&lt;mask&gt; est revenu
+Fred est
+&lt;mask&gt; est
+mon arrière grand-père était
+&lt;mask&gt; était
+Fred ans
+&lt;mask&gt; ans
+mon père mois
+&lt;mask&gt; mois
+Yakoutsk gagné
+&lt;mask&gt; gagné
+le Kamchatka perdu
+&lt;mask&gt; perdu
+les archéologues des indices
+&lt;mask&gt; des indices
+les hommes préhistoriques du gibier
+&lt;mask&gt; du gibier
+la police de stopper
+&lt;mask&gt; de stopper
+le gang d'organiser
+&lt;mask&gt; d'organiser
+dans le gâteau sucre
+&lt;mask&gt; sucre
+dans le frigo restes
+&lt;mask&gt; restes
+les chevilles guéries
+&lt;mask&gt; guéries
+les béquilles superflues
+&lt;mask&gt; superflues
+les partisans minorité
+&lt;mask&gt; minorité
+les opposants majorité
+&lt;mask&gt; majorité
+des biscuits à l'avoine plus
+&lt;mask&gt; plus
+des biscuits au chocolat moins
+&lt;mask&gt; moins
+le stylo de café
+&lt;mask&gt; de café
+le café d'encre
+&lt;mask&gt; d'encre
+Stéphane admire
+&lt;mask&gt; admire
+Fred influence
+&lt;mask&gt; influence
+la table large
+&lt;mask&gt; large
+la porte étroite
+&lt;mask&gt; étroite
+Jean  est parti ?
+&lt;mask&gt;  est parti ?
+Benoît  est parti ?
+&lt;mask&gt;  est parti ?
+Claire eu de réponse
+&lt;mask&gt; eu de réponse
+Sylvie répondu
+&lt;mask&gt; répondu
+Joël reçu
+&lt;mask&gt; reçu
+le détective livré
+&lt;mask&gt; livré
+de Gérard La pinte vide
+&lt;mask&gt; La pinte vide
+du barman la clé des toilettes
+&lt;mask&gt; la clé des toilettes
+Thomas conduire tout seul
+&lt;mask&gt; conduire tout seul
+Raphaël marcher
+&lt;mask&gt; marcher
+Benoît n'avait pas
+&lt;mask&gt; n'avait pas
+Jean avait
+&lt;mask&gt; avait
+de Benoît Ce n'était pas
+&lt;mask&gt; Ce n'était pas
+de Jean C'était
+&lt;mask&gt; C'était
+de l'homme dos
+&lt;mask&gt; dos
+du garçon lit
+&lt;mask&gt; lit
+Benoît  possédait les jouets ?
+&lt;mask&gt;  possédait les jouets ?
+Thierry  possédait les jouets ?
+&lt;mask&gt;  possédait les jouets ?
+du père Les bras
+&lt;mask&gt; Les bras
+du garçon le couffin
+&lt;mask&gt; le couffin
+celle de la femme La poitrine
+&lt;mask&gt; La poitrine
+celle de la fille La volonté
+&lt;mask&gt; La volonté
+le Dr Vincenot pris sa retraite
+&lt;mask&gt; pris sa retraite
+Michel un cancer
+&lt;mask&gt; un cancer
+Claire n'avait pas
+&lt;mask&gt; n'avait pas
+Jeanine avait
+&lt;mask&gt; avait
+Jérémy essuyé un refus
+&lt;mask&gt; essuyé un refus
+Robert refusé
+&lt;mask&gt; refusé
+Kirilov moins
+&lt;mask&gt; moins
+Chatoff plus
+&lt;mask&gt; plus
+les conseillers municipaux craint
+&lt;mask&gt; craint
+les manifestants prône
+&lt;mask&gt; prône
+Claire demandé
+&lt;mask&gt; demandé
+Suzanne consacré
+&lt;mask&gt; consacré
+Sarah réussi
+&lt;mask&gt; réussi
+Sabine raté
+&lt;mask&gt; raté
+la sculpture lourd
+&lt;mask&gt; lourd
+l'étagère encombré
+&lt;mask&gt; encombré
+le dessin de Sam  est mis en valeur ?
+&lt;mask&gt;  est mis en valeur ?
+le dessin de Tina  est mis en valeur ?
+&lt;mask&gt;  est mis en valeur ?
+François acheté
+&lt;mask&gt; acheté
+Thomas vendu
+&lt;mask&gt; vendu
+Pierre  est le plus brillant ?
+&lt;mask&gt;  est le plus brillant ?
+Martin  est le plus brillant ?
+&lt;mask&gt;  est le plus brillant ?
+Simon convaincu
+&lt;mask&gt; convaincu
+Marc compris
+&lt;mask&gt; compris
+le savon retiré
+&lt;mask&gt; retiré
+le siphon nettoyé
+&lt;mask&gt; nettoyé
+le rendez-vous de courte durée
+&lt;mask&gt; de courte durée
+mon train retardé
+&lt;mask&gt; retardé
+la pluie  a continué jusqu'à vingt-deux heures ?
+&lt;mask&gt;  a continué jusqu'à vingt-deux heures ?
+la séance  a continué jusqu'à vingt-deux heures ?
+&lt;mask&gt;  a continué jusqu'à vingt-deux heures ?
+le chiffon au linge sale
+&lt;mask&gt; au linge sale
+le couteau dans le tiroir
+&lt;mask&gt; dans le tiroir
+Anne  a oublié les horaires de fermeture de la bibliothèque ?
+&lt;mask&gt;  a oublié les horaires de fermeture de la bibliothèque ?
+Marie  a oublié les horaires de fermeture de la bibliothèque ?
+&lt;mask&gt;  a oublié les horaires de fermeture de la bibliothèque ?
+la carafe lourd
+&lt;mask&gt; lourd
+l'étagère haut
+&lt;mask&gt; haut
+Pierre gagné
+&lt;mask&gt; gagné
+Adam perdu
+&lt;mask&gt; perdu
+sur la pelouse trop chaud
+&lt;mask&gt; trop chaud
+sous l'arbre plus frais
+&lt;mask&gt; plus frais
+Anne mère épanouie
+&lt;mask&gt; mère épanouie
+la fille d'Anne enfant adorable
+&lt;mask&gt; enfant adorable
+le chien bas
+&lt;mask&gt; bas
+le chat haut
+&lt;mask&gt; haut
+Jean impressionné
+&lt;mask&gt; impressionné
+le jongleur impressionnant
+&lt;mask&gt; impressionnant
+Boris faible
+&lt;mask&gt; faible
+Carlo inquiet
+&lt;mask&gt; inquiet
+Pierre honnête
+&lt;mask&gt; honnête
+Marc prudent
+&lt;mask&gt; prudent
+le violon possède
+&lt;mask&gt; possède
+le morceau aime
+&lt;mask&gt; aime
+le livre lira
+&lt;mask&gt; lira
+l'article rédigera
+&lt;mask&gt; rédigera
+les scientifiques a commencé
+&lt;mask&gt; a commencé
+les poissons est apparu
+&lt;mask&gt; est apparu
+de Thomas déplacé
+&lt;mask&gt; déplacé
+de Raphaël capturé
+&lt;mask&gt; capturé
+de Liliane le silence
+&lt;mask&gt; le silence
+de Marie la concentration
+&lt;mask&gt; la concentration
+Denis compatissant
+&lt;mask&gt; compatissant
+Benoît cruel
+&lt;mask&gt; cruel
+Emma avait vu que l'autre était démarquée
+&lt;mask&gt; avait vu que l'autre était démarquée
+Jeanine était démarquée
+&lt;mask&gt; était démarquée
+Le scooter vite
+&lt;mask&gt; vite
+Le bus scolaire lentement
+&lt;mask&gt; lentement
+Frank  est le vainqueur ?
+&lt;mask&gt;  est le vainqueur ?
+Marc  est le vainqueur ?
+&lt;mask&gt;  est le vainqueur ?
+l'éponge fer
+&lt;mask&gt; fer
+la carafe cristal
+&lt;mask&gt; cristal
+Jean petit
+&lt;mask&gt; petit
+Benoît grand
+&lt;mask&gt; grand
+Anna  a beaucoup révisé ?
+&lt;mask&gt;  a beaucoup révisé ?
+Lucy  a beaucoup révisé ?
+&lt;mask&gt;  a beaucoup révisé ?
+Les pompiers  venait de plus loin ?
+&lt;mask&gt;  venait de plus loin ?
+Les policiers  venait de plus loin ?
+&lt;mask&gt;  venait de plus loin ?
+Jérémy  était contrarié ?
+&lt;mask&gt;  était contrarié ?
+Kevin  était contrarié ?
+&lt;mask&gt;  était contrarié ?
+le sac de pommes de terre  faudra-t-il déplacer en premier ?
+&lt;mask&gt;  faudra-t-il déplacer en premier ?
+le sac de farine  faudra-t-il déplacer en premier ?
+&lt;mask&gt;  faudra-t-il déplacer en premier ?
+Sylvie curieuse
+&lt;mask&gt; curieuse
+Marie bavarde
+&lt;mask&gt; bavarde
+Sandrine  l'autre au sujet de l'accident ?
+&lt;mask&gt;  l'autre au sujet de l'accident ?
+Anne  l'autre au sujet de l'accident ?
+&lt;mask&gt;  l'autre au sujet de l'accident ?
+le frère de Joël moins
+&lt;mask&gt; moins
+Joël plus
+&lt;mask&gt; plus
+le tableau de la bibliothèque
+&lt;mask&gt; de la bibliothèque
+l'arbre d'une maison
+&lt;mask&gt; d'une maison
+le portable plus accessible
+&lt;mask&gt; plus accessible
+mon sac moins lourd
+&lt;mask&gt; moins lourd
+le monument incontournable
+&lt;mask&gt; incontournable
+le guide complet
+&lt;mask&gt; complet
+la chatte impatiente
+&lt;mask&gt; impatiente
+la souris prudente
+&lt;mask&gt; prudente
+la clé extirper
+&lt;mask&gt; extirper
+la serrure ouvrir
+&lt;mask&gt; ouvrir
+le braqueur condamné
+&lt;mask&gt; condamné
+le guichetier soigné
+&lt;mask&gt; soigné
+Samuel et Amélie jeune
+&lt;mask&gt; jeune
+les parents d'Amélie snob
+&lt;mask&gt; snob
+les renards téméraire
+&lt;mask&gt; téméraire
+les lapins nerveux
+&lt;mask&gt; nerveux
+le pull démodé
+&lt;mask&gt; démodé
+le gilet beau
+&lt;mask&gt; beau
+le têtard  devrait se mettre à l'abri ?
+&lt;mask&gt;  devrait se mettre à l'abri ?
+le canard  devrait se mettre à l'abri ?
+&lt;mask&gt;  devrait se mettre à l'abri ?
+l'aile de papillon  s'est cassé ?
+&lt;mask&gt;  s'est cassé ?
+la table  s'est cassé ?
+&lt;mask&gt;  s'est cassé ?
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[122]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1">#[ add masked text</span>
+<span class="c1"># read use_reunion10</span>
+<span class="n">masked_texts</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">data_dir</span><span class="o">+</span><span class="s2">"use_reunion10.csv"</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s2">";"</span><span class="p">)</span>
+<span class="n">masked_texts</span> <span class="o">=</span> <span class="n">masked_texts</span><span class="o">.</span><span class="n">masked</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">masked_texts</span><span class="p">)</span><span class="c1">#%%</span>
+
+<span class="c1">#[ add correct answer head</span>
+<span class="c1"># read use_reunion10</span>
+<span class="n">df_bert</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">data_dir</span><span class="o">+</span><span class="s2">"use_reunion10.csv"</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s2">";"</span><span class="p">)</span>
+<span class="n">correct_answer_heads</span> <span class="o">=</span> <span class="n">df_bert</span><span class="o">.</span><span class="n">answer</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="n">options</span> <span class="o">=</span> <span class="n">df_bert</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="n">schemas</span> <span class="o">=</span>  <span class="n">df_bert</span><span class="o">.</span><span class="n">id_schema</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="n">corre_answer_heads</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">wrong_answer_heads</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">maske_texts</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">ans</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">correct_answer_heads</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">schemas</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">29</span><span class="p">,</span><span class="mi">39</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">56</span><span class="p">,</span><span class="mi">82</span><span class="p">,</span><span class="mi">96</span><span class="p">]:</span>
+        <span class="n">option</span> <span class="o">=</span> <span class="n">options</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">wrong_answer</span> <span class="o">=</span> <span class="n">option</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">ans</span><span class="p">,</span><span class="s2">""</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="n">wrong_answer_heads</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">wrong_answer</span><span class="p">)</span>
+        <span class="n">corre_answer_heads</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">option</span><span class="p">)</span>
+        <span class="n">maske_texts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">masked_texts</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+<span class="n">masked_texts</span> <span class="o">=</span> <span class="n">maske_texts</span>
+<span class="n">correct_answer_heads</span> <span class="o">=</span> <span class="n">corre_answer_heads</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">correct_answer_heads</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">wrong_answer_heads</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">double_ids</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">double_french_schema_ids</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">questions</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">answers</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hypotheses</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">masked_hypotheses</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">masked_texts</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+202
+202
+202
+202
+202
+202
+202
+202
+202
+202
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[123]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="ch">#! probleme a regler sur les conseillers et pas que</span>
+<span class="c1"># build the first final version</span>
+<span class="n">dt_df</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"id"</span><span class="p">:</span><span class="n">double_ids</span><span class="p">,</span><span class="s2">"french_schema_no"</span><span class="p">:</span> <span class="n">double_french_schema_ids</span><span class="p">,</span><span class="s2">"question"</span><span class="p">:</span><span class="n">questions</span><span class="p">,</span><span class="s2">"correct_answer_head"</span><span class="p">:</span><span class="n">correct_answer_heads</span><span class="p">,</span>
+         <span class="s2">"wrong_answer_head"</span><span class="p">:</span><span class="n">wrong_answer_heads</span><span class="p">,</span>
+         <span class="s2">"correct_answer"</span><span class="p">:</span><span class="n">answers</span><span class="p">,</span><span class="s2">"text"</span><span class="p">:</span><span class="n">items</span><span class="p">,</span><span class="s2">"wrong_answer"</span><span class="p">:</span><span class="n">wrong_answers</span><span class="p">,</span><span class="s2">"hypothesis"</span><span class="p">:</span><span class="n">hypotheses</span><span class="p">,</span><span class="s2">"masked_hypothesis"</span><span class="p">:</span><span class="n">masked_hypotheses</span><span class="p">,</span><span class="s2">"masked_text"</span><span class="p">:</span><span class="n">masked_texts</span><span class="p">}</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">dt_df</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">shape</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s2">"id"</span><span class="p">,</span><span class="s2">"text"</span><span class="p">,</span><span class="s2">"question"</span><span class="p">,</span><span class="s2">"correct_answer"</span><span class="p">,</span><span class="s2">"french_schema_no"</span><span class="p">]]</span>
-<span class="c1">#! still need</span>
-<span class="c1">#? need what?</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s2">"id"</span><span class="p">,</span><span class="s2">"text"</span><span class="p">,</span><span class="s2">"masked_text"</span><span class="p">,</span><span class="s2">"question"</span><span class="p">,</span><span class="s2">"hypothesis"</span><span class="p">,</span><span class="s2">"masked_hypothesis"</span><span class="p">,</span><span class="s2">"correct_answer"</span><span class="p">,</span><span class="s2">"wrong_answer"</span><span class="p">,</span><span class="s2">"correct_answer_head"</span><span class="p">,</span><span class="s2">"wrong_answer_head"</span><span class="p">,</span><span class="s2">"french_schema_no"</span><span class="p">]]</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">xo_write_json</span><span class="p">(</span><span class="n">data_dir</span><span class="o">+</span><span class="s2">"winofr_final_v2.json"</span><span class="p">,</span><span class="n">df</span><span class="p">)</span>
+<span class="n">final1</span> <span class="o">=</span> <span class="n">xo_read_json</span><span class="p">(</span><span class="n">data_dir</span><span class="o">+</span><span class="s2">"winofr_final_v2.json"</span><span class="p">)</span>
+<span class="c1">#[ reorder the ids</span>
+<span class="n">final2</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">final1</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="s2">"id"</span><span class="p">])</span>
+<span class="n">final2</span>
+<span class="c1">#[ keep only the ones in wsc273</span>
+<span class="n">final3</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">final2</span> <span class="k">if</span> <span class="n">x</span><span class="p">[</span><span class="s2">"correct_answer"</span><span class="p">]</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">"les conseillers municipaux"</span><span class="p">,</span><span class="s2">"les manifestants"</span><span class="p">]</span> <span class="ow">or</span> <span class="n">x</span><span class="p">[</span><span class="s2">"id"</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">]</span>
+<span class="c1"># final3</span>
+<span class="c1"># final3 = [x for x in final3 if x["text"] == "Les conseillers municipaux ont refusé une autorisation aux manifestants, car ils craignent la violence. " or x["id"] != 1]</span>
+<span class="c1"># final3</span>
+<span class="c1"># #[ some cleanning</span>
+<span class="k">for</span> <span class="n">it</span> <span class="ow">in</span> <span class="n">final3</span><span class="p">:</span>
+    <span class="n">it</span><span class="p">[</span><span class="s2">"text"</span><span class="p">]</span> <span class="o">=</span> <span class="n">it</span><span class="p">[</span><span class="s2">"text"</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="n">it</span><span class="p">[</span><span class="s2">"question"</span><span class="p">]</span> <span class="o">=</span> <span class="n">it</span><span class="p">[</span><span class="s2">"question"</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="n">it</span><span class="p">[</span><span class="s2">"correct_answer"</span><span class="p">]</span> <span class="o">=</span> <span class="n">it</span><span class="p">[</span><span class="s2">"correct_answer"</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="n">final3</span>
+<span class="n">xo_write_json</span><span class="p">(</span><span class="n">data_dir</span><span class="o">+</span><span class="s2">"winofr_final_v3.json"</span><span class="p">,</span><span class="n">df</span><span class="p">)</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">final3</span><span class="p">)</span> <span class="c1">#202</span>
 </pre></div>
 </div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[123]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+202
+</pre></div></div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[140]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[78]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># xo_write_json(data_dir+"winofr_final.json",df)</span>
-
-<span class="c1"># *  2021-03-10 restart from here please</span>
-<span class="n">xo_read_json</span><span class="p">()</span>
-<span class="n">xo_read_json</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[121]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1">#* make options -&gt; no need since we got incorrect answers list</span>
-<span class="c1"># options = [f"{x}|{y}" for x,y in zip(answers_a,answers_b)]</span>
-<span class="c1"># options_doubled = []</span>
-<span class="c1"># for op in options:</span>
-<span class="c1">#     options_doubled.append(op)</span>
-<span class="c1">#     options_doubled.append(op)</span>
-<span class="c1"># len(options_doubled)</span>
-</pre></div>
-</div>
-</div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython2 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1">#* make no_context</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>
 </pre></div>
 </div>
 </div>
@@ -667,26 +1154,8 @@ div.rendered_html tbody tr:hover {
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../emma_template/index.html">
-              <div class="page-info">
-                <div class="context">
-                  <span>Next</span>
-                </div>
-                <div class="title">Emma Dubois 2020/04/06</div>
-              </div>
-              <svg><use href="#svg-arrow-right"></use></svg>
-            </a>
-          <a class="prev-page" href="02_french_final_json.html">
-              <svg><use href="#svg-arrow-right"></use></svg>
-              <div class="page-info">
-                <div class="context">
-                  <span>Previous</span>
-                </div>
-                
-                <div class="title"><span class="section-number">2. </span>Towards a full version of french wino (split schemas)</div>
-                
-              </div>
-            </a>
+          
+          
         </div>
 
         <div class="related-information">
@@ -717,8 +1186,8 @@ div.rendered_html tbody tr:hover {
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">3. Towards a full version of french wino (final steps)</a><ul>
-<li><a class="reference internal" href="#Why">3.1. Why</a></li>
+<li><a class="reference internal" href="#">Towards a full version of french wino (final steps)</a><ul>
+<li><a class="reference internal" href="#Why">Why</a></li>
 </ul>
 </li>
 </ul>
@@ -731,11 +1200,11 @@ div.rendered_html tbody tr:hover {
     </aside>
   </main>
 </div>
-    <script id="documentation_options" data-url_root="../" src="../static/documentation_options.js"></script>
-    <script src="../static/jquery.js"></script>
-    <script src="../static/underscore.js"></script>
-    <script src="../static/doctools.js"></script>
-    <script src="../static/translations.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="../static/scripts/main.js"></script></body>
+    <script src="../_static/scripts/main.js"></script></body>
 </html>

@@ -18,7 +18,7 @@ Welcome to Wino-fr's documentation page
    Paper published at `TALN` by `Olga Seminck, Vincent Segonne, Pascal Amsili`,  check `Modèles de langue appliqués aux schémas Winograd français (Language Models applied to French Winograd Schemas) <https://www.aclweb.org/anthology/2019.jeptalnrecital-court.20/>`_
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: -1
    :glob:
 
    xiaoou/index

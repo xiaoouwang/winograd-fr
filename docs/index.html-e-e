@@ -137,7 +137,20 @@
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="xiaoou/index.html">Xiaoou Wang Internship Winograd (2021/02/01 - 2021/07/31)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xiaoou/index.html">Xiaoou Wang Internship Winograd (2021/02/01 - 2021/07/31)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="xiaoou/01_french_data_cleaning.html">1. French data cleaning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="xiaoou/01_french_data_cleaning.html#Previously-by-Olga-et-Pascal">1.1. Previously by Olga et Pascal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="xiaoou/01_french_data_cleaning.html#Manual-correction">1.2. Manual correction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="xiaoou/01_french_data_cleaning.html#Add-the-alt-information-to-the-json-as-pmi_able">1.3. Add the alt information to the json as <code class="docutils literal notranslate"><span class="pre">pmi_able</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="xiaoou/02_french_final_json.html">2. Towards a full version of french wino (split schemas)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xiaoou/03_french_finalfinal_json.html">3. Towards a full version of french wino (final steps)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="xiaoou/03_french_finalfinal_json.html#Why">3.1. Why</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="admonition-log-xiaoou-wang admonition">

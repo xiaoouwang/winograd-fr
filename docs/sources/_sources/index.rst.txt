@@ -54,7 +54,11 @@ Cette section documente la contribution de Xiaoou Wang au projet Wino-fr.
 
     |check|  2021-03-10: Build the complete version from xml by *Xiaoou* -> winofr_final.json :doc:`xiaoou/03_french_finalfinal_json`
 
-    |uncheck|  2021-03-10: Calculate pmi with scraper and compare with Bert no context
+    |check|  2021-03-11: Build the complete version from xml by *Xiaoou* -> `v4.json` :doc:`xiaoou/04_add_pmi_items`
+
+    |uncheck|  2021-03-12: Correct `v4.json`
+
+    |uncheck|  2021-03-12: Recalculate pmi with scraper and compare with Bert no context
 
 .. include:: emma_template/index.rst
    :start-line: 3

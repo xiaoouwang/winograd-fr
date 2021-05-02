@@ -62,7 +62,7 @@ Cette section documente la contribution de Xiaoou Wang au projet Wino-fr.
 
     |check|  2021-03-12: Recalculate pmi with scraper and compare with Bert no context
 
-    |check|  2021-04-13: First attemp with Camembert using a classification model
+    |check|  2021-04-13: First attempt with Camembert using a classification model
 
     |check|  2021-04-25: Create more train with DeepL translation
 

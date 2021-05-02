@@ -24,8 +24,10 @@ Cette section documente la contribution de Xiaoou Wang au projet Wino-fr.
 
     |check|  2021-03-11: Build the complete version from xml by *Xiaoou* -> v5.json :doc:`./04_add_pmi_items`
 
-    |check|  2021-03-12: Discussion Pascal, Correct `v5.json` :doc:`./05_make_uppercase_add_nontranslated`
-
     |check|  2021-03-12: Recalculate pmi with scraper and compare with Bert no context
 
-    |check|  2021-03-29: Test multi-token prediction, to be adjusted :doc:`./06_multitoken_test`
+    |check|  2021-04-13: First attempt with Camembert using a classification model
+
+    |check|  2021-04-25: Create more train with DeepL translation
+
+    |uncheck|  2021-04-29: Finish translating the whole corpus/and another two size corpus

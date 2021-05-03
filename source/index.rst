@@ -66,5 +66,9 @@ Cette section documente la contribution de Xiaoou Wang au projet Wino-fr.
 
     |check|  2021-04-25: Create more train with DeepL translation
 
-    |uncheck|  2021-04-29: Finish translating the whole corpus/and another two size corpus
+    |check|  2021-04-29: Finish translating the whole corpus/and another two size corpus.
+
+    |check|  2021-05-03 : correct the bug of whole word replacing in kocijan's github.
+
+    |uncheck|  2021-05-04: recheck pmi measures
 
